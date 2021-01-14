@@ -1,0 +1,1263 @@
+
+OB_SUCCESS, 0, 0, "00000", "Success"
+OB_ERROR, -4000, -1, "HY000", "Common error"
+OB_OBJ_TYPE_ERROR, -4001, -1, "HY004", "Object type error"
+OB_INVALID_ARGUMENT, -4002, ER_WRONG_ARGUMENTS, "HY000", "Invalid argument", "Incorrect arguments to %s"
+OB_ARRAY_OUT_OF_RANGE, -4003, -1, "42000", "Array index out of range"
+OB_SERVER_LISTEN_ERROR, -4004, -1, "08S01", "Failed to listen to the port"
+OB_INIT_TWICE, -4005, -1, "HY000", "The object is initialized twice"
+OB_NOT_INIT, -4006, -1, "HY000", "The object is not initialized"
+OB_NOT_SUPPORTED, -4007, ER_NOT_SUPPORTED_YET, "0A000", "Not supported feature or function", "%s not supported"
+OB_ITER_END, -4008, -1, "HY000", "End of iteration"
+OB_IO_ERROR, -4009, -1, "58030", "IO error", OER_IO_EXCEPTION, "io exception"
+OB_ERROR_FUNC_VERSION, -4010, -1, "HY000", "Wrong RPC command version"
+OB_PACKET_NOT_SENT, -4011, -1, "HY000", "Can not send packet"
+OB_TIMEOUT, -4012, -1, "HY000", "Timeout"
+OB_ALLOCATE_MEMORY_FAILED, -4013, -1, "HY001", "No memory or reach tenant memory limit"
+OB_INNER_STAT_ERROR, -4014, -1, "HY000", "Inner state error"
+OB_ERR_SYS, -4015, -1, "HY000", "System error"
+OB_ERR_UNEXPECTED, -4016, -1, "HY000", "Ooooooooooooops", "%s"
+OB_ENTRY_EXIST, -4017, -1, "HY000", "Entry already exist", "%s"
+OB_ENTRY_NOT_EXIST, -4018, -1, "HY000", "Entry not exist", "%s"
+OB_SIZE_OVERFLOW, -4019, -1, "HY000", "Size overflow"
+OB_REF_NUM_NOT_ZERO, -4020, -1, "HY000", "Reference count is not zero"
+OB_CONFLICT_VALUE, -4021, -1, "HY000", "Conflict value"
+OB_ITEM_NOT_SETTED, -4022, -1, "HY000", "Item not set"
+OB_EAGAIN, -4023, -1, "HY000", "Try again"
+OB_BUF_NOT_ENOUGH, -4024, -1, "HY000", "Buffer not enough"
+OB_PARTIAL_FAILED, -4025, -1, "HY000", "Partial failed"
+OB_READ_NOTHING, -4026, -1, "02000", "Nothing to read"
+OB_FILE_NOT_EXIST, -4027, ER_FILE_NOT_FOUND, "HY000", "File not exist"
+OB_DISCONTINUOUS_LOG, -4028, -1, "HY000", "Log entry not continuous"
+OB_SCHEMA_ERROR, -4029, -1, "HY000", "Schema error"
+OB_TENANT_OUT_OF_MEM, -4030, -1, "HY000", "Over tenant memory limits", OER_OUT_OF_PGA_AGGREGATE_LIMIT, "Over tenant memory limits"
+OB_UNKNOWN_OBJ, -4031, -1, "HY004", "Unknown object"
+OB_NO_MONITOR_DATA, -4032, -1, "02000", "No monitor data"
+OB_SERIALIZE_ERROR, -4033, -1, "HY000", "Serialize error"
+OB_DESERIALIZE_ERROR, -4034, -1, "HY000", "Deserialize error"
+OB_AIO_TIMEOUT, -4035, -1, "HY000", "Asynchronous IO error", OER_IO_EXCEPTION, "io exception"
+OB_NEED_RETRY, -4036, -1, "HY000", "Need retry"
+OB_TOO_MANY_SSTABLE, -4037, -1, "HY000", "Too many sstable"
+OB_NOT_MASTER, -4038, -1, "HY000", "The observer or zone is not the master"
+OB_DECRYPT_FAILED, -4041, -1, "HY000", "Decrypt error"
+OB_USER_NOT_EXIST, -4042, ER_PASSWORD_NO_MATCH, "42000", "Can not find any matching row in the user table"
+using password: %s
+OB_SKEY_VERSION_WRONG, -4044, -1, "HY000", "Wrong skey version"
+OB_NOT_REGISTERED, -4048, -1, "HY000", "Not registered"
+OB_WAITQUEUE_TIMEOUT, -4049, 4012, "HY000", "Task timeout and not executed"
+OB_NOT_THE_OBJECT, -4050, -1, "HY000", "Not the object"
+OB_ALREADY_REGISTERED, -4051, -1, "HY000", "Already registered"
+OB_LAST_LOG_RUINNED, -4052, -1, "HY000", "Corrupted log entry"
+OB_NO_CS_SELECTED, -4053, -1, "HY000", "No ChunkServer selected"
+OB_NO_TABLETS_CREATED, -4054, -1, "HY000", "No tablets created"
+OB_INVALID_ERROR, -4055, -1, "HY000", "Invalid entry"
+OB_DECIMAL_OVERFLOW_WARN, -4057, -1, "HY000", "Decimal overflow warning"
+OB_DECIMAL_UNLEGAL_ERROR, -4058, -1, "HY000", "Decimal overflow error"
+OB_OBJ_DIVIDE_ERROR, -4060, -1, "HY000", "Divide error"
+OB_NOT_A_DECIMAL, -4061, -1, "HY000", "Not a decimal"
+OB_DECIMAL_PRECISION_NOT_EQUAL, -4062, -1, "HY104", "Decimal precision error"
+OB_EMPTY_RANGE, -4063, -1, "HY000", "Empty range"
+OB_SESSION_KILLED, -4064, -1, "HY000", "Session killed"
+OB_LOG_NOT_SYNC, -4065, -1, "HY000", "Log not sync"
+OB_DIR_NOT_EXIST, -4066, ER_CANT_READ_DIR, "HY000", "Directory not exist"
+OB_SESSION_NOT_FOUND, -4067, 4012, "HY000", "RPC session not found"
+OB_INVALID_LOG, -4068, -1, "HY000", "Invalid log"
+OB_INVALID_DATA, -4070, -1, "HY000", "Invalid data"
+OB_ALREADY_DONE, -4071, -1, "HY000", "Already done"
+OB_CANCELED, -4072, -1, "HY000", "Operation canceled"
+OB_LOG_SRC_CHANGED, -4073, -1, "HY000", "Log source changed"
+OB_LOG_NOT_ALIGN, -4074, -1, "HY000", "Log not aligned"
+OB_LOG_MISSING, -4075, -1, "HY000", "Log entry missed"
+OB_NEED_WAIT, -4076, -1, "HY000", "Need wait"
+OB_NOT_IMPLEMENT, -4077, -1, "0A000", "Not implemented feature"
+OB_DIVISION_BY_ZERO, -4078, ER_DIVISION_BY_ZERO, "42000", "Divided by zero"
+OB_EXCEED_MEM_LIMIT, -4080, -1, "HY013", "exceed memory limit"
+OB_RESULT_UNKNOWN, -4081, -1, "HY000", "Unknown result"
+OB_NO_RESULT, -4084, -1, "02000", "No result"
+OB_QUEUE_OVERFLOW, -4085, -1, "HY000", "Queue overflow"
+OB_TERM_LAGGED, -4097, -1, "HY000", "Term lagged"
+OB_TERM_NOT_MATCH, -4098, -1, "HY000", "Term not match"
+OB_START_LOG_CURSOR_INVALID, -4099, -1, "HY000", "Invalid log cursor"
+OB_LOCK_NOT_MATCH, -4100, -1, "HY000", "Lock not match"
+OB_DEAD_LOCK, -4101, ER_LOCK_DEADLOCK, "HY000", "Deadlock", OER_DEADLOCK_DETECTED_WHILE_WAITING, "deadlock detected while waiting for resource"
+OB_PARTIAL_LOG, -4102, -1, "HY000", "Incomplete log entry"
+OB_CHECKSUM_ERROR, -4103, -1, "42000", "Data checksum error"
+OB_INIT_FAIL, -4104, -1, "HY000", "Initialize error"
+OB_NOT_ENOUGH_STORE, -4106, -1, "HY000", "not enough commitlog store"
+OB_BLOCK_SWITCHED, -4107, -1, "HY000", "block switched when fill commitlog"
+OB_STATE_NOT_MATCH, -4109, -1, "HY000", "Server state or role not the same as expected"
+OB_READ_ZERO_LOG, -4110, -1, "HY000", "Read zero log"
+OB_BLOCK_NEED_FREEZE, -4111, -1, "HY000", "block need freeze"
+OB_BLOCK_FROZEN, -4112, -1, "HY000", "block frozen"
+OB_IN_FATAL_STATE, -4113, -1, "HY000", "In FATAL state"
+OB_IN_STOP_STATE, -4114, -1, "08S01", "In STOP state"
+OB_UPS_MASTER_EXISTS, -4115, -1, "HY000", "Master UpdateServer already exists"
+OB_LOG_NOT_CLEAR, -4116, -1, "42000", "Log not clear"
+OB_FILE_ALREADY_EXIST, -4117, ER_FILE_EXISTS_ERROR, "58000", "File already exist"
+OB_UNKNOWN_PACKET, -4118, ER_UNKNOWN_COM_ERROR, "HY001", "Unknown packet"
+OB_RPC_PACKET_TOO_LONG, -4119, -1, "08000", "RPC packet to send too long"
+OB_LOG_TOO_LARGE, -4120, -1, "HY000", "Log too large"
+OB_RPC_SEND_ERROR, -4121, -1, "08000", "RPC send error"
+OB_RPC_POST_ERROR, -4122, -1, "08000", "RPC post error"
+OB_LIBEASY_ERROR, -4123, -1, "08000", "Libeasy error"
+OB_CONNECT_ERROR, -4124, -1, "HY000", "Connect error"
+OB_NOT_FREE, -4125, -1, "HY000", "Not free"
+OB_INIT_SQL_CONTEXT_ERROR, -4126, -1, "HY000", "Init SQL context error"
+OB_SKIP_INVALID_ROW, -4127, -1, "42000", "Skip invalid row"
+OB_RPC_PACKET_INVALID, -4128, -1, "HY000", "RPC packet is invalid"
+OB_NO_TABLET, -4133, -1, "HY000", "No tablets"
+OB_SNAPSHOT_DISCARDED, -4138, -1, "HY000", "Request to read too old versioned data"
+OB_DATA_NOT_UPTODATE, -4139, -1, "HY000", "State is stale"
+OB_ROW_MODIFIED, -4142, -1, "HY000", "Row modified"
+OB_VERSION_NOT_MATCH, -4143, -1, "42000", "Version not match"
+OB_BAD_ADDRESS, -4144, -1, "42000", "Bad address"
+OB_ENQUEUE_FAILED, -4146, -1, "HY000", "Enqueue error"
+OB_INVALID_CONFIG, -4147, -1, "HY000", "Invalid config"
+OB_STMT_EXPIRED, -4149, -1, "HY000", "Expired statement"
+OB_ERR_MIN_VALUE, -4150, -1, "42000", "Min value"
+OB_ERR_MAX_VALUE, -4151, -1, "42000", "Max value"
+OB_ERR_NULL_VALUE, -4152, -1, "42000", "Null value", "%s"
+OB_RESOURCE_OUT, -4153, ER_OUT_OF_RESOURCES, "53000", "Out of resource"
+OB_ERR_SQL_CLIENT, -4154, -1, "HY000", "Internal SQL client error"
+OB_META_TABLE_WITHOUT_USE_TABLE, -4155, -1, "HY000", "Meta table without use table"
+OB_DISCARD_PACKET, -4156, -1, "HY000", "Discard packet"
+OB_OPERATE_OVERFLOW, -4157, ER_DATA_OUT_OF_RANGE, "22003", "value is out of range", "%s value is out of range in '%s'", OER_DATA_VALUE_OUT_OF_RANGE, "Data value out of range", "Data value %s out of range in '%s'"
+OB_INVALID_DATE_FORMAT, -4158, ER_TRUNCATED_WRONG_VALUE, "22007", "Incorrect value", "%s=%d must between %d and %d", OER_DATE_FORMAT_NOT_RECOGNIZED, "date format not recognized", "date format not recognized, %s=%d must between %d and %d"
+OB_POOL_REGISTERED_FAILED, -4159, -1, "HY000", "register pool failed"
+OB_POOL_UNREGISTERED_FAILED, -4160, -1, "HY000", "unregister pool failed"
+OB_INVALID_ARGUMENT_NUM, -4161, -1, "42000", "Invalid argument num"
+OB_LEASE_NOT_ENOUGH, -4162, -1, "HY000", "reserved lease not enough"
+OB_LEASE_NOT_MATCH, -4163, -1, "HY000", "ups lease not match with rs"
+OB_UPS_SWITCH_NOT_HAPPEN, -4164, -1, "HY000", "ups switch not happen"
+OB_EMPTY_RESULT, -4165, -1, "HY000", "Empty result"
+OB_CACHE_NOT_HIT, -4166, -1, "HY000", "Cache not hit"
+OB_NESTED_LOOP_NOT_SUPPORT, -4167, -1, "HY000", "Nested loop not support"
+OB_LOG_INVALID_MOD_ID, -4168, -1, "HY000", "Invalid log module id"
+OB_LOG_MODULE_UNKNOWN, -4169, -1, "HY000", "Unknown module name", "Unknown module name. Invalid Setting:'%.*s'. Syntax:parMod.subMod:level, parMod.subMod:level"
+OB_LOG_LEVEL_INVALID, -4170, -1, "HY000", "Invalid level", "Invalid level. Invalid setting:'%.*s'. Syntax:parMod.subMod:level, parMod.subMod:level"
+OB_LOG_PARSER_SYNTAX_ERR, -4171, -1, "HY000", "Syntax to set log_level error", "Syntax to set log_level error. Invalid setting:'%.*s'. Syntax:parMod.subMod:level, parMod.subMod:level"
+OB_INDEX_OUT_OF_RANGE, -4172, -1, "HY000", "Index out of range"
+OB_INT_UNDERFLOW, -4173, -1, "HY000", "Int underflow"
+OB_UNKNOWN_CONNECTION, -4174, ER_NO_SUCH_THREAD, "HY000", "Unknown thread id", "Unknown thread id: %lu"
+OB_ERROR_OUT_OF_RANGE, -4175, -1, "42000", "Out of range"
+OB_CACHE_SHRINK_FAILED, -4176, -1, "HY001", "shrink cache failed, no available cache"
+OB_OLD_SCHEMA_VERSION, -4177, -1, "42000", "Schema version too old"
+OB_RELEASE_SCHEMA_ERROR, -4178, -1, "HY000", "Release schema error"
+OB_OP_NOT_ALLOW, -4179, -1, "HY000", "Operation not allowed now", "%s not allowed"
+OB_NO_EMPTY_ENTRY, -4180, -1, "HY000", "No empty entry"
+OB_ERR_ALREADY_EXISTS, -4181, -1, "42S01", "Already exist"
+OB_SEARCH_NOT_FOUND, -4182, -1, "HY000", "Value not found"
+OB_BEYOND_THE_RANGE, -4183, -1, "HY000", "Key out of range"
+OB_CS_OUTOF_DISK_SPACE, -4184, -1, "53100", "ChunkServer out of disk space"
+OB_COLUMN_GROUP_NOT_FOUND, -4185, -1, "HY000", "Column group not found"
+OB_CS_COMPRESS_LIB_ERROR, -4186, -1, "HY000", "ChunkServer failed to get compress library"
+OB_ITEM_NOT_MATCH, -4187, -1, "HY000", "Item not match"
+OB_SCHEDULER_TASK_CNT_MISMATCH, -4188, -1, "HY000", "Running task cnt and unfinished task cnt not consistent"
+OB_INVALID_MACRO_BLOCK_TYPE, -4189, -1, "HY000", "the macro block type does not exist"
+OB_INVALID_DATE_FORMAT_END, -4190, ER_TRUNCATED_WRONG_VALUE, "22007", "Incorrect value", OER_INVALID_DATE_FORMAT_END, "date format picture ends before converting entire input string"
+OB_HASH_EXIST, -4200, -1, "HY000", "hash map/set entry exist", "%s"
+OB_HASH_NOT_EXIST, -4201, -1, "HY000", "hash map/set entry not exist", "%s"
+OB_HASH_GET_TIMEOUT, -4204, -1, "HY000", "hash map/set get timeout"
+OB_HASH_PLACEMENT_RETRY, -4205, -1, "HY000", "hash map/set retry"
+OB_HASH_FULL, -4206, -1, "HY000", "hash map/set full"
+OB_PACKET_PROCESSED, -4207, -1, "HY000", "packet processed"
+OB_WAIT_NEXT_TIMEOUT, -4208, -1, "HY000", "wait next packet timeout"
+OB_LEADER_NOT_EXIST, -4209, -1, "HY000", "partition has not leader"
+OB_PREPARE_MAJOR_FREEZE_FAILED, -4210, -1, "HY000", "prepare major freeze failed"
+OB_COMMIT_MAJOR_FREEZE_FAILED, -4211, -1, "HY000", "commit major freeze failed"
+OB_ABORT_MAJOR_FREEZE_FAILED, -4212, -1, "HY000", "abort major freeze failed"
+OB_MAJOR_FREEZE_NOT_FINISHED, -4213, -1, "HY000", "last major freeze not finish"
+OB_PARTITION_NOT_LEADER, -4214, -1, "HY000", "partition is not leader partition"
+OB_WAIT_MAJOR_FREEZE_RESPONSE_TIMEOUT, -4215, -1, "HY000", "wait major freeze response timeout"
+OB_CURL_ERROR, -4216, -1, "HY000", "curl error"
+OB_MAJOR_FREEZE_NOT_ALLOW, -4217, -1, "HY000", "Major freeze not allowed now", "%s"
+OB_PREPARE_FREEZE_FAILED, -4218, -1, "HY000", "prepare freeze failed"
+OB_INVALID_DATE_VALUE, -4219, ER_TRUNCATED_WRONG_VALUE, "22007", "Incorrect value", "Incorrect datetime value: '%s' for column '%s' at row %d", OER_LITERAL_NOT_MATCH_FORMAT_STRING, "literal does not match format string", "literal does not match format string: '%s' for column '%s' at row %d"
+OB_INACTIVE_SQL_CLIENT, -4220, -1, "HY000", "Inactive sql client, only read allowed"
+OB_INACTIVE_RPC_PROXY, -4221, -1, "HY000", "Inactive rpc proxy, can not send RPC request"
+OB_INTERVAL_WITH_MONTH, -4222, -1, "42000", "Interval with year or month can not be converted to microseconds"
+OB_TOO_MANY_DATETIME_PARTS, -4223, -1, "42000", "Interval has too many datetime parts"
+OB_DATA_OUT_OF_RANGE, -4224, ER_WARN_DATA_OUT_OF_RANGE, "22003", "Out of range value for column", "Out of range value for column '%.*s' at row %lld"
+OB_PARTITION_NOT_EXIST, -4225, -1, "HY000", "Partition entry not exists"
+OB_ERR_TRUNCATED_WRONG_VALUE_FOR_FIELD, -4226, ER_TRUNCATED_WRONG_VALUE_FOR_FIELD, "HY000", "Incorrect integer value", "Incorrect integer value: '%.*s'"
+OB_ERR_NO_DEFAULT_FOR_FIELD, -4227, ER_NO_DEFAULT_FOR_FIELD, "HY000", "Field doesn't have a default value", "Field \'%s\' doesn't have a default value"
+OB_ERR_FIELD_SPECIFIED_TWICE, -4228, ER_FIELD_SPECIFIED_TWICE, "42000", "Column specified twice", "Column \'%s\' specified twice", OER_DUPLICATE_COLUMN_NAME, "duplicate column name", "duplicate column name \'%s\'"
+max = %ld
+max = %ld
+max = %ld
+OB_NOT_FOLLOWER, -4232, -1, "HY000", "The observer or zone is not a follower"
+OB_ERR_OUT_OF_LOWER_BOUND, -4233, -1, "HY000", "smaller than container lower bound"
+OB_ERR_OUT_OF_UPPER_BOUND, -4234, -1, "HY000", "bigger than container upper bound"
+%.*s
+OB_OBCONFIG_RETURN_ERROR, -4236, -1, "HY000", "ObConfig return error code"
+OB_OBCONFIG_APPNAME_MISMATCH, -4237, -1, "HY000", "Appname mismatch with obconfig result"
+OB_ERR_VIEW_SELECT_DERIVED, -4238, ER_VIEW_SELECT_DERIVED, "HY000", "View's SELECT contains a subquery in the FROM clause"
+OB_CANT_MJ_PATH, -4239, -1, "HY000", "Can not use merge-join to join the tables without join conditions"
+OB_ERR_NO_JOIN_ORDER_GENERATED, -4240, -1, "HY000", "No join order generated"
+OB_ERR_NO_PATH_GENERATED, -4241, -1, "HY000", "No join path generated"
+OB_ERR_WAIT_REMOTE_SCHEMA_REFRESH, -4242, -1, "HY000", "Schema error"
+OB_FILE_NOT_OPENED, -4243, -1, "HY000", "file not opened"
+OB_TIMER_TASK_HAS_SCHEDULED, -4244, -1, "HY000", "Timer task has been scheduled"
+OB_TIMER_TASK_HAS_NOT_SCHEDULED, -4245, -1, "HY000", "Timer task has not been scheduled"
+OB_PARSE_DEBUG_SYNC_ERROR, -4246, -1, "HY000", "parse debug sync string error"
+OB_UNKNOWN_DEBUG_SYNC_POINT, -4247, -1, "HY000", "unknown debug sync point"
+OB_ERR_INTERRUPTED, -4248, -1, "HY000", "task is interrupted while running"
+OB_ERR_DATA_TRUNCATED, -4249, WARN_DATA_TRUNCATED, "01000", "Data truncated for argument", "Data truncated for column '%.*s' at row %lld"
+
+OB_NOT_RUNNING, -4250, -1, "HY000", "module is not running"
+OB_INVALID_PARTITION, -4251, -1, "HY000", "partition not valid"
+OB_ERR_TIMEOUT_TRUNCATED, -4252, WARN_DATA_TRUNCATED, "01000", "Timeout value truncated to 102 years"
+max = %ld
+OB_ERR_NET_PACKET_TOO_LARGE, -4254, ER_NET_PACKET_TOO_LARGE, "08S01", "Got a packet bigger than \'max_allowed_packet\' bytes"
+OB_TRACE_DESC_NOT_EXIST, -4255, -1, "HY000", "trace log title or key not exist describle"
+OB_ERR_NO_DEFAULT, -4256, ER_NO_DEFAULT, "42000", "Variable doesn't have a default value", "Variable '%.*s' doesn't have a default value"
+OB_ERR_COMPRESS_DECOMPRESS_DATA, -4257, -1, "HY000", "compress data or decompress data failed"
+OB_ERR_INCORRECT_STRING_VALUE, -4258, ER_TRUNCATED_WRONG_VALUE_FOR_FIELD, "HY000", "Incorrect string value", "Incorrect string value for column '%.*s' at row %lld"
+OB_ERR_DISTRIBUTED_NOT_SUPPORTED, -4259, ER_NOT_SUPPORTED_YET, "0A000", "Not supported feature or function", "%s not supported"
+OB_IS_CHANGING_LEADER, -4260, -1, "HY000", "the partition is changing leader"
+OB_DATETIME_FUNCTION_OVERFLOW, -4261, ER_DATETIME_FUNCTION_OVERFLOW, "22008", "Datetime overflow"
+OB_ERR_DOUBLE_TRUNCATED, -4262, ER_TRUNCATED_WRONG_VALUE, "01000", "Truncated incorrect DOUBLE value", "Truncated incorrect DOUBLE value: '%.*s'"
+OB_MINOR_FREEZE_NOT_ALLOW, -4263, -1, "HY000", "Minor freeze not allowed now", "%s"
+OB_LOG_OUTOF_DISK_SPACE, -4264, -1, "HY000", "Log out of disk space"
+OB_RPC_CONNECT_ERROR, -4265, -1, "HY000", "Rpc connect error"
+OB_MINOR_MERGE_NOT_ALLOW, -4266, -1, "HY000", "minor merge not allow"
+OB_CACHE_INVALID, -4267, -1, "HY000", "Cache invalid"
+OB_REACH_SERVER_DATA_COPY_IN_CONCURRENCY_LIMIT, -4268, -1, "HY000", "reach server data copy in concurrency"
+OB_WORKING_PARTITION_EXIST, -4269, -1, "HY000", "Working partition entry already exists"
+OB_WORKING_PARTITION_NOT_EXIST, -4270, -1, "HY000", "Working partition entry does not exists"
+OB_LIBEASY_REACH_MEM_LIMIT, -4271, -1, "HY000", "LIBEASY reach memory limit"
+OB_MISS_ARGUMENT, -4272, ER_WRONG_ARGUMENTS, "HY000", "Miss argument", "Miss argument for %s"
+OB_CACHE_FREE_BLOCK_NOT_ENOUGH, -4273, -1, "HY000", "free memblock in cache is not enough"
+OB_SYNC_WASH_MB_TIMEOUT, -4274, -1, "HY000", "sync wash memblock timeout"
+OB_NOT_ALLOW_MIGRATE_IN, -4275, -1, "HY000", "not allow migrate in"
+OB_SCHEDULER_TASK_CNT_MISTACH, -4276, -1, "HY000", "Scheduler task cnt does not match"
+OB_MISS_ARGUMENT, -4277, ER_WRONG_ARGUMENTS, "HY000", "Miss argument", "Miss argument for %s"
+OB_LAST_LOG_NOT_COMPLETE, -4278, -1, "HY000", "last log is not complete"
+OB_TABLE_IS_DELETED, -4279, -1, "HY000", "table is deleted"
+OB_VERSION_RANGE_NOT_CONTINUES, -4280, -1, "HY000", "version range not continues"
+OB_INVALID_IO_BUFFER, -4281, -1, "HY000", "io buffer is invalid"
+OB_PARTITION_IS_REMOVED, -4282, -1, "HY000", "partition is removed"
+OB_GTS_NOT_READY, -4283, -1, "HY000", "gts is not ready"
+OB_MAJOR_SSTABLE_NOT_EXIST, -4284, -1, "HY000", "major sstable not exist"
+OB_VERSION_RANGE_DISCARDED, -4285, -1, "HY000", "Request to read too old version range data"
+OB_MAJOR_SSTABLE_HAS_MERGED, -4286, -1, "HY000", "major sstable may has been merged"
+OB_MINOR_SSTABLE_RANGE_CROSS, -4287, -1, "HY000", "minor sstable version range cross"
+OB_MEMTABLE_CANNOT_MINOR_MERGE, -4288, -1, "HY000", "memtable cannot minor merge"
+OB_TASK_EXIST, -4289, -1, "HY000", "task exist"
+OB_ALLOCATE_DISK_SPACE_FAILED, -4290, -1, "HY000", "cannot allocate disk space"
+OB_CANT_FIND_UDF, -4291, ER_CANT_FIND_UDF, "HY000", "Can't load function", "Can not load function %s"
+OB_CANT_INITIALIZE_UDF, -4292, ER_CANT_INITIALIZE_UDF, "HY000", "Can't initialize function", "Can not initialize function '%.*s'"
+OB_UDF_NO_PATHS, -4293, ER_UDF_NO_PATHS, "HY000", "No paths allowed for shared library"
+OB_UDF_EXISTS, -4294, ER_UDF_EXISTS, "HY000", "Function already exists", "Function %.*s already exists"
+OB_CANT_OPEN_LIBRARY, -4295, ER_CANT_OPEN_LIBRARY, "HY000", "Can't open shared library", "Can not open shared library '%.*s'"
+OB_CANT_FIND_DL_ENTRY, -4296, ER_CANT_FIND_DL_ENTRY, "HY000", "Can't find symbol", "Can't find symbol %.*s in library"
+OB_OBJECT_NAME_EXIST, -4297, -1, "HY000", "name is already used by an existing object"
+OB_OBJECT_NAME_NOT_EXIST, -4298, -1, "HY000", "object does not exist", "%s does not exist", OER_SEQ_NOT_EXIST, "object does not exist", "%s does not exist"
+
+OB_ERR_INVALID_SEQUENCE_NAME, -4300,-1, "HY000", "invalid sequence name",OER_INVALID_SEQUENCE_NAME, "invalid sequence name"
+OB_ERR_DUP_MAXVALUE_SPEC, -4301,-1, "HY000", "duplicate MAXVALUE/NOMAXVALUE specifications",OER_DUP_CONFL_MAXVALUE_SPEC, "duplicate MAXVALUE/NOMAXVALUE specifications"
+OB_ERR_DUP_MINVALUE_SPEC, -4302,-1, "HY000", "duplicate MINVALUE/NOMINVALUE specifications",OER_DUP_CONFL_MINVALUE_SPEC, "duplicate MINVALUE/NOMINVALUE specifications"
+OB_ERR_DUP_CYCLE_SPEC, -4303,-1, "HY000", "duplicate CYCLE/NOCYCLE specifications",OER_DUP_CONFL_CYCLE_SPEC, "duplicate CYCLE/NOCYCLE specifications"
+OB_ERR_DUP_CACHE_SPEC, -4304,-1, "HY000", "duplicate CACHE/NOCACHE specifications",OER_DUP_CONFL_CACHE_SPEC, "duplicate CACHE/NOCACHE specifications"
+OB_ERR_DUP_ORDER_SPEC, -4305,-1, "HY000", "duplicate ORDER/NOORDER specifications",OER_DUP_CONFL_ORDER_SPEC, "duplicate ORDER/NOORDER specifications"
+OB_ERR_CONFL_MAXVALUE_SPEC, -4306,-1, "HY000", "conflicting MAXVALUE/NOMAXVALUE specifications",OER_DUP_CONFL_MAXVALUE_SPEC, "conflicting MAXVALUE/NOMAXVALUE specifications"
+OB_ERR_CONFL_MINVALUE_SPEC, -4307,-1, "HY000", "conflicting MINVALUE/NOMINVALUE specifications",OER_DUP_CONFL_MINVALUE_SPEC, "conflicting MINVALUE/NOMINVALUE specifications"
+OB_ERR_CONFL_CYCLE_SPEC, -4308,-1, "HY000", "conflicting CYCLE/NOCYCLE specifications",OER_DUP_CONFL_CYCLE_SPEC, "conflicting CYCLE/NOCYCLE specifications"
+OB_ERR_CONFL_CACHE_SPEC, -4309,-1, "HY000", "conflicting CACHE/NOCACHE specifications",OER_DUP_CONFL_CACHE_SPEC, "conflicting CACHE/NOCACHE specifications"
+OB_ERR_CONFL_ORDER_SPEC, -4310,-1, "HY000", "conflicting ORDER/NOORDER specifications",OER_DUP_CONFL_ORDER_SPEC, "conflicting ORDER/NOORDER specifications"
+OB_ERR_ALTER_START_SEQ_NUMBER_NOT_ALLOWED, -4311,-1, "HY000", "cannot alter starting sequence number",OER_ALTER_START_SEQ_NUMBER_NOT_ALLOWED, "cannot alter starting sequence number"
+OB_ERR_DUP_INCREMENT_BY_SPEC, -4312,-1, "HY000", "duplicate INCREMENT BY specifications",OER_DUP_INCREMENT_BY_SPEC, "duplicate INCREMENT BY specifications",
+OB_ERR_DUP_START_WITH_SPEC, -4313,-1, "HY000", "duplicate START WITH specifications",OER_DUP_START_WITH_SPEC, "duplicate START WITH specifications",
+OB_ERR_REQUIRE_ALTER_SEQ_OPTION, -4314,-1, "HY000", "no options specified for ALTER SEQUENCE",OER_REQUIRE_ALTER_SEQ_OPTION, "no options specified for ALTER SEQUENCE"
+OB_ERR_SEQ_NOT_ALLOWED_HERE, -4315,-1, "HY000", "sequence number not allowed here",OER_SEQ_NOT_ALLOWED_HERE, "sequence number not allowed here"
+OB_ERR_SEQ_NOT_EXIST, -4316,-1, "HY000", "sequence does not exist",OER_SEQ_NOT_EXIST, "sequence does not exist"
+OB_ERR_SEQ_OPTION_MUST_BE_INTEGER, -4317,-1, "HY000", "sequence parameter must be an integer",OER_SEQ_OPTION_MUST_BE_INTEGER, "sequence parameter must be an integer"
+OB_ERR_SEQ_INCREMENT_CAN_NOT_BE_ZERO, -4318,-1, "HY000", "INCREMENT must be a nonzero integer",OER_SEQ_INCREMENT_CAN_NOT_BE_ZERO, "INCREMENT must be a nonzero integer"
+OB_ERR_SEQ_OPTION_EXCEED_RANGE, -4319,-1, "HY000", "sequence parameter exceeds maximum size allowed",OER_SEQ_OPTION_EXCEED_RANGE, "sequence parameter exceeds maximum size allowed"
+OB_ERR_MINVALUE_LARGER_THAN_MAXVALUE, -4320,-1, "HY000", "MINVALUE must be less than MAXVALUE",OER_MINVALUE_LARGER_THAN_MAXVALUE, "MINVALUE must be less than MAXVALUE"
+OB_ERR_SEQ_INCREMENT_TOO_LARGE, -4321,-1, "HY000", "INCREMENT must be less than MAXVALUE minus MINVALUE",OER_SEQ_INCREMENT_TOO_LARGE, "INCREMENT must be less than MAXVALUE minus MINVALUE"
+OB_ERR_START_WITH_LESS_THAN_MINVALUE, -4322,-1, "HY000", "START WITH cannot be less than MINVALUE",OER_START_WITH_LESS_THAN_MINVALUE, "START WITH cannot be less than MINVALUE"
+OB_ERR_MINVALUE_EXCEED_CURRVAL, -4323,-1, "HY000", "MINVALUE cannot be made to exceed the current value",OER_MINVALUE_EXCEED_CURRVAL, "MINVALUE cannot be made to exceed the current value"
+OB_ERR_START_WITH_EXCEED_MAXVALUE, -4324,-1, "HY000", "START WITH cannot be more than MAXVALUE",OER_START_WITH_EXCEED_MAXVALUE, "START WITH cannot be more than MAXVALUE"
+OB_ERR_MAXVALUE_EXCEED_CURRVAL, -4325,-1, "HY000", "MAXVALUE cannot be made to be less than the current value",OER_MAXVALUE_EXCEED_CURRVAL, "MAXVALUE cannot be made to be less than the current value"
+OB_ERR_SEQ_CACHE_TOO_SMALL, -4326,-1, "HY000", "the number of values to CACHE must be greater than 1",OER_SEQ_CACHE_TOO_SMALL, "the number of values to CACHE must be greater than 1"
+OB_ERR_SEQ_OPTION_OUT_OF_RANGE, -4327,-1, "HY000", "sequence option value out of range",OER_SEQ_OPTION_OUT_OF_RANGE, "sequence option value out of range"
+OB_ERR_SEQ_CACHE_TOO_LARGE, -4328,-1, "HY000", "number to CACHE must be less than one cycle",OER_SEQ_CACHE_TOO_LARGE, "number to CACHE must be less than one cycle"
+OB_ERR_SEQ_REQUIRE_MINVALUE, -4329,-1, "HY000", "descending sequences that CYCLE must specify MINVALUE",OER_SEQ_REQUIRE_MINVALUE, "descending sequences that CYCLE must specify MINVALUE"
+OB_ERR_SEQ_REQUIRE_MAXVALUE, -4330,-1, "HY000", "ascending sequences that CYCLE must specify MAXVALUE",OER_SEQ_REQUIRE_MAXVALUE, "ascending sequences that CYCLE must specify MAXVALUE"
+OB_ERR_SEQ_NO_LONGER_EXIST, -4331,-1, "HY000", "sequence no longer exists", "sequence %s no longer exists",OER_SEQ_REQUIRE_MAXVALUE, "sequence no longer exists", "sequence %s no longer exists"
+OB_ERR_SEQ_VALUE_EXCEED_LIMIT, -4332, -1, "HY000", "sequence exceeds limit and cannot be instantiated", "sequence exceeds %s and cannot be instantiated", OER_SEQ_VALUE_EXCEED_LIMIT, "sequence exceeds limit and cannot be instantiated", "sequence exceeds %s and cannot be instantiated"
+OB_ERR_DIVISOR_IS_ZERO, -4333,-1, "HY000", "divisor is equal to zero",OER_DIVISOR_IS_ZERO, "divisor is equal to zero"
+OB_ERR_AES_DECRYPT, -4334, -1, "HY000", "fail to decrypt data"
+OB_ERR_AES_ENCRYPT, -4335, -1, "HY000", "fail to encrypt data"
+OB_ERR_AES_IV_LENGTH, -4336, ER_AES_INVALID_IV, "HY000", "The initialization vector supplied to aes_encrypt is too short. Must be at least 16 bytes long"
+
+
+
+OB_IMPORT_NOT_IN_SERVER, -4505, -1, "HY000", "Import not in service"
+OB_CONVERT_ERROR, -4507, -1, "42000", "Convert error"
+OB_BYPASS_TIMEOUT, -4510, -1, "HY000", "Bypass timeout"
+OB_RS_STATE_NOT_ALLOW, -4512, -1, "HY000", "RootServer state error"
+OB_NO_REPLICA_VALID, -4515, -1, "HY000", "No replica is valid"
+OB_NO_NEED_UPDATE, -4517, -1, "HY000", "No need to update"
+OB_CACHE_TIMEOUT, -4518, -1, "HY000", "Cache timeout"
+OB_ITER_STOP, -4519, -1, "HY000", "Iteration was stopped"
+OB_ZONE_ALREADY_MASTER, -4523, -1, "HY000", "The zone is the master already"
+OB_IP_PORT_IS_NOT_SLAVE_ZONE, -4524, -1, "HY000", "Not slave zone"
+OB_ZONE_IS_NOT_SLAVE, -4525, -1, "HY000", "Not slave zone"
+OB_ZONE_IS_NOT_MASTER, -4526, -1, "HY000", "Not master zone"
+OB_CONFIG_NOT_SYNC, -4527, -1, "F0000", "Configuration not sync"
+OB_IP_PORT_IS_NOT_ZONE, -4528, -1, "42000", "Not a zone address"
+OB_MASTER_ZONE_NOT_EXIST, -4529, -1, "HY000", "Master zone not exist"
+OB_ZONE_INFO_NOT_EXIST, -4530, -1, "HY000", "Zone info not exist", "Zone info \'%s\' not exist"
+OB_GET_ZONE_MASTER_UPS_FAILED, -4531, -1, "HY000", "Failed to get master UpdateServer"
+OB_MULTIPLE_MASTER_ZONES_EXIST, -4532, -1, "HY000", "Multiple master zones"
+OB_INDEXING_ZONE_INVALID, -4533, -1, "HY000", "indexing zone is not exist anymore or not active"
+OB_ROOT_TABLE_RANGE_NOT_EXIST, -4537, -1, "HY000", "Tablet range not exist"
+OB_ROOT_MIGRATE_CONCURRENCY_FULL, -4538, -1, "HY000", "Migrate concurrency full"
+OB_ROOT_MIGRATE_INFO_NOT_FOUND, -4539, -1, "HY000", "Migrate info not found"
+OB_NOT_DATA_LOAD_TABLE, -4540, -1, "HY000", "No data to load"
+OB_DATA_LOAD_TABLE_DUPLICATED, -4541, -1, "HY000", "Duplicated table data to load"
+OB_ROOT_TABLE_ID_EXIST, -4542, -1, "HY000", "Table ID exist"
+OB_INDEX_TIMEOUT, -4543, -1, "HY000", "Building index timeout"
+OB_ROOT_NOT_INTEGRATED, -4544, -1, "42000", "Root not integrated"
+OB_INDEX_INELIGIBLE, -4545, -1, "HY000", "index data not unique"
+OB_REBALANCE_EXEC_TIMEOUT, -4546, -1, "HY000", "execute replication or migration task timeout"
+OB_MERGE_NOT_STARTED, -4547, -1, "HY000", "global merge not started"
+OB_MERGE_ALREADY_STARTED, -4548, -1, "HY000", "merge already started"
+OB_ROOTSERVICE_EXIST, -4549, -1, "HY000", "rootservice already exist"
+OB_RS_SHUTDOWN, -4550, -1, "HY000", "rootservice is shutdown"
+OB_SERVER_MIGRATE_IN_DENIED, -4551, -1, "HY000", "server migrate in denied"
+OB_REBALANCE_TASK_CANT_EXEC, -4552, -1, "HY000", "rebalance task can not executing now"
+OB_PARTITION_CNT_REACH_ROOTSERVER_LIMIT, -4553, -1, "HY000", "rootserver can not hold more partition"
+OB_REBALANCE_TASK_NOT_IN_PROGRESS, -4554, -1, "HY000", "rebalance task not in progress on observer"
+OB_DATA_SOURCE_NOT_EXIST, -4600, -1, "HY000", "Data source not exist"
+OB_DATA_SOURCE_TABLE_NOT_EXIST, -4601, -1, "HY000", "Data source table not exist"
+OB_DATA_SOURCE_RANGE_NOT_EXIST, -4602, -1, "HY000", "Data source range not exist"
+OB_DATA_SOURCE_DATA_NOT_EXIST, -4603, -1, "HY000", "Data source data not exist"
+OB_DATA_SOURCE_SYS_ERROR, -4604, -1, "HY000", "Data source sys error"
+OB_DATA_SOURCE_TIMEOUT, -4605, -1, "HY000", "Data source timeout"
+OB_DATA_SOURCE_CONCURRENCY_FULL, -4606, -1, "53000", "Data source concurrency full"
+OB_DATA_SOURCE_WRONG_URI_FORMAT, -4607, -1, "42000", "Data source wrong URI format"
+
+OB_SSTABLE_VERSION_UNEQUAL, -4608, -1, "42000", "SSTable version not equal"
+OB_UPS_RENEW_LEASE_NOT_ALLOWED, -4609, -1, "HY000", "ups should not renew its lease"
+OB_UPS_COUNT_OVER_LIMIT, -4610, -1, "HY000", "ups count over limit"
+OB_NO_UPS_MAJORITY, -4611, -1, "HY000", "ups not form a majority"
+OB_INDEX_COUNT_REACH_THE_LIMIT, -4613, -1, "HY000", "created index tables count has reach the limit:128"
+OB_TASK_EXPIRED, -4614, -1, "HY000", "task expired"
+OB_TABLEGROUP_NOT_EMPTY, -4615, -1, "HY000", "tablegroup is not empty"
+OB_INVALID_SERVER_STATUS, -4620, -1, "HY000", "server status is not valid"
+OB_WAIT_ELEC_LEADER_TIMEOUT, -4621, -1, "HY000", "wait elect partition leader timeout"
+OB_WAIT_ALL_RS_ONLINE_TIMEOUT, -4622, -1, "HY000", "wait all rs online timeout"
+OB_ALL_REPLICAS_ON_MERGE_ZONE, -4623, -1, "HY000", "all replicas of partition group are on zones to merge"
+OB_MACHINE_RESOURCE_NOT_ENOUGH, -4624, -1, "HY000", "machine resource is not enough to hold a new unit"
+OB_NOT_SERVER_CAN_HOLD_SOFTLY, -4625, -1, "HY000", "not server can hole the unit and not over soft limit"
+OB_RESOURCE_POOL_ALREADY_GRANTED, -4626, -1, "HY000", "resource pool has already been granted to a tenant", "resource pool \'%s\' has already been granted to a tenant"
+OB_SERVER_ALREADY_DELETED, -4628, -1, "HY000", "server has already been deleted"
+OB_SERVER_NOT_DELETING, -4629, -1, "HY000", "server is not in deleting status"
+OB_SERVER_NOT_IN_WHITE_LIST, -4630, -1, "HY000", "server not in server white list"
+OB_SERVER_ZONE_NOT_MATCH, -4631, -1, "HY000", "server zone not match"
+OB_OVER_ZONE_NUM_LIMIT, -4632, -1, "HY000", "zone num has reach max zone num"
+OB_ZONE_STATUS_NOT_MATCH, -4633, -1, "HY000", "zone status not match"
+OB_RESOURCE_UNIT_IS_REFERENCED, -4634, -1, "HY000", "resource unit is referenced by resource pool", "resource unit \'%s\' is referenced by some resource pool"
+OB_DIFFERENT_PRIMARY_ZONE, -4636, -1, "HY000", "table schema primary zone different with other table in sampe tablegroup"
+OB_SERVER_NOT_ACTIVE, -4637, -1, "HY000", "server is not active"
+OB_RS_NOT_MASTER, -4638, -1, "HY000", "The RootServer is not the master"
+OB_CANDIDATE_LIST_ERROR, -4639, -1, "HY000", "The candidate list is invalid"
+OB_PARTITION_ZONE_DUPLICATED, -4640, -1, "HY000", "The chosen partition servers belong to same zone."
+OB_ZONE_DUPLICATED, -4641, -1, "HY000", "Duplicated zone in zone list", "Duplicated zone \'%s\' in zone list %s"
+OB_NOT_ALL_ZONE_ACTIVE, -4642, -1, "HY000", "Not all zone in zone list are active"
+OB_PRIMARY_ZONE_NOT_IN_ZONE_LIST, -4643, -1, "HY000", "primary zone not in zone list", "primary zone \'%s\' not in zone list %s"
+OB_REPLICA_NUM_NOT_MATCH, -4644, -1, "HY000", "replica num not same with zone count"
+OB_ZONE_LIST_POOL_LIST_NOT_MATCH, -4645, -1, "HY000", "zone list not a subset of  resource pool list", "zone list %s not a subset of resource pool zone list %s"
+OB_INVALID_TENANT_NAME, -4646, -1, "HY000", "tenant name is too long", "tenant name \'%s\' over max_tenant_name_length %ld"
+OB_EMPTY_RESOURCE_POOL_LIST, -4647, -1, "HY000", "resource pool list is empty"
+OB_RESOURCE_UNIT_NOT_EXIST, -4648, -1, "HY000", "resource unit not exist", "resource unit \'%s\' not exist"
+OB_RESOURCE_UNIT_EXIST, -4649, -1, "HY000", "resource unit already exist", "resource unit \'%s\' already exist"
+OB_RESOURCE_POOL_NOT_EXIST, -4650, -1, "HY000", "resource pool not exist", "resource pool \'%s\' not exist"
+OB_RESOURCE_POOL_EXIST, -4651, -1, "HY000", "resource pool already exist", "resource pool \'%s\' exist"
+OB_WAIT_LEADER_SWITCH_TIMEOUT, -4652, -1, "HY000", "wait leader switch timeout"
+OB_LOCATION_NOT_EXIST, -4653, -1, "HY000", "location not exist"
+OB_LOCATION_LEADER_NOT_EXIST, -4654, -1, "HY000", "location leader not exist"
+OB_ZONE_NOT_ACTIVE, -4655, -1, "HY000", "zone not active"
+OB_UNIT_NUM_OVER_SERVER_COUNT, -4656, -1, "HY000", "resource pool unit num is bigger than zone server count"
+OB_POOL_SERVER_INTERSECT, -4657, -1, "HY000", "resource pool list unit server intersect", "resource pool list %s unit servers intersect"
+OB_NOT_SINGLE_RESOURCE_POOL, -4658, -1, "HY000", "create tenant only support single resource pool now", "create tenant only support single resource pool now, but pool list is %s"
+OB_INVALID_RESOURCE_UNIT, -4659, -1, "HY000", "invalid resource unit", "invalid resource unit, %s\'s min value is %s"
+OB_STOP_SERVER_IN_MULTIPLE_ZONES, -4660, -1, "HY000", "Can not stop server in multiple zones", "Can not stop server in multiple zones, there are already servers stopped in zone:%s"
+OB_SESSION_ENTRY_EXIST, -4661, -1, "HY000", "Session already exist"
+OB_GOT_SIGNAL_ABORTING, -4662, ER_GOT_SIGNAL, "01000", "Got signal. Aborting!", "%s: Got signal %d. Aborting!"
+OB_SERVER_NOT_ALIVE, -4663, -1, "HY000", "server is not alive"
+OB_GET_LOCATION_TIME_OUT, -4664, 4012, "HY000", "Timeout"
+OB_UNIT_IS_MIGRATING, -4665, -1, "HY000", "Unit is migrating, can not migrate again"
+OB_CLUSTER_NO_MATCH, -4666, -1, "HY000", "cluster name is not match", "cluster name is not match to \'%s\'"
+OB_CHECK_ZONE_MERGE_ORDER, -4667, -1, "HY000", "Please check new zone in zone_merge_order. You can show parameters like 'zone_merge_order'"
+OB_ERR_ZONE_NOT_EMPTY, -4668, -1, "HY000", "zone not empty", "The zone is not empty and can not be deleted. You should delete the servers of the zone. There are %ld servers alive and %ld not alive."
+OB_DIFFERENT_LOCALITY, -4669, -1, "HY000", "locality not match, check it"
+OB_EMPTY_LOCALITY, -4670, -1, "HY000", "locality is empty"
+OB_FULL_REPLICA_NUM_NOT_ENOUGH, -4671, -1, "HY000", "full replica num not enough"
+OB_REPLICA_NUM_NOT_ENOUGH, -4672, -1, "HY000", "replica num not enough"
+OB_DATA_SOURCE_NOT_VALID, -4673, -1, "HY000", "Data source not valid"
+OB_RUN_JOB_NOT_SUCCESS, -4674, -1, "HY000", "run job not success yet"
+OB_NO_NEED_REBUILD, -4675, -1, "HY000", "no need to rebuild"
+OB_NEED_REMOVE_UNNEED_TABLE, -4676, -1, "HY000", "need remove unneed table"
+OB_NO_NEED_MERGE, -4677, -1, "HY000", "no need to merge"
+OB_CONFLICT_OPTION, -4678, -1, "HY000", "conflicting specifications", "conflicting %.*s specifications"
+OB_DUPLICATE_OPTION, -4679, -1, "HY000", "duplicate specifications", "duplicate %.*s specifications"
+OB_INVALID_OPTION, -4680, -1, "HY000", "invalid specifications", "%s"
+OB_RPC_NEED_RECONNECT, -4681, -1, "HY000", "rpc need reconnect", "%s"
+OB_CANNOT_COPY_MAJOR_SSTABLE, -4682, -1, "HY000", "cannot copy major sstable now"
+OB_SRC_DO_NOT_ALLOWED_MIGRATE, -4683, -1, "HY000", "src do not allowed migrate"
+OB_TOO_MANY_TENANT_PARTITIONS_ERROR, -4684, -1, "HY000", "Too many partitions were defined for this tenant"
+OB_ACTIVE_MEMTBALE_NOT_EXSIT, -4685, -1, "HY000", "active memtable not exist"
+
+
+
+
+OB_ERR_PARSER_INIT, -5000, ER_PARSE_ERROR, "0B000", "Failed to init SQL parser"
+OB_ERR_PARSE_SQL, -5001, ER_PARSE_ERROR, "42000", "Parse error", "%s near \'%.*s\' at line %d", OER_INVALID_SQL_STATEMENT, "invalid SQL statement", "%s near \'%.*s\' at line %d"
+OB_ERR_RESOLVE_SQL, -5002, -1, "HY000", "Resolve error"
+OB_ERR_GEN_PLAN, -5003, -1, "HY000", "Generate plan error"
+OB_ERR_PARSER_SYNTAX, -5006, ER_SYNTAX_ERROR, "42000", "You have an error in your SQL syntax; check the manual that corresponds to your OceanBase version for the right syntax to use", OER_INVALID_SQL_STATEMENT, "You have an error in your SQL syntax; check the manual that corresponds to your OceanBase version for the right syntax to use"
+OB_ERR_COLUMN_SIZE, -5007, ER_WRONG_NUMBER_OF_COLUMNS_IN_SELECT, "21000", "The used SELECT statements have a different number of columns"
+
+OB_ERR_COLUMN_DUPLICATE, -5008, ER_DUP_FIELDNAME, "42S21", "Duplicate column name", "Duplicate column name '%.*s'"
+OB_ERR_OPERATOR_UNKNOWN, -5010, -1, "21000", "Unknown operator"
+OB_ERR_STAR_DUPLICATE, -5011, -1, "42000", "Duplicated star"
+OB_ERR_ILLEGAL_ID, -5012, -1, "HY000", "Illegal ID", "%s"
+OB_ERR_ILLEGAL_VALUE, -5014, -1, "HY000", "Illegal value"
+OB_ERR_COLUMN_AMBIGUOUS, -5015, ER_AMBIGUOUS_FIELD_TERM, "42000", "Ambiguous column"
+OB_ERR_LOGICAL_PLAN_FAILD, -5016, -1, "HY000", "Generate logical plan error"
+OB_ERR_SCHEMA_UNSET, -5017, -1, "HY000", "Schema not set"
+OB_ERR_ILLEGAL_NAME, -5018, -1, "42000", "Illegal name"
+OB_ERR_TABLE_EXIST, -5020, ER_TABLE_EXISTS_ERROR, "42S01", "Table already exists", "Table '%.*s' already exists"
+OB_TABLE_NOT_EXIST, -5019, ER_NO_SUCH_TABLE, "42S02", "Table doesn\'t exist", "Table \'%s.%s\' doesn\'t exist", OER_TABLE_OR_VIEW_NOT_EXIST, "table or view does not exist", "table or view \'%s.%s\' does not exist"
+OB_ERR_EXPR_UNKNOWN, -5022, -1, "42000", "Unknown expression"
+OB_ERR_ILLEGAL_TYPE, -5023, -1, "S1004", "Illegal type", "unsupport MySQL type %d. Maybe you should use java.sql.Timestamp instead of java.util.Date."
+OB_ERR_KEY_NAME_DUPLICATE, -5025, ER_DUP_KEYNAME, "42000", "Duplicated key name", "Duplicate key name \'%.*s\'"
+OB_ERR_PRIMARY_KEY_DUPLICATE, -5024, ER_DUP_ENTRY, "23000", "Duplicated primary key", "Duplicate entry \'%s\' for key \'%.*s\'", OER_UNIQUE_CONSTRAINT_VIOLATED, "unique constraint violated", "unique constraint \'%s\' for key \'%.*s\' violated"
+OB_ERR_CREATETIME_DUPLICATE, -5026, -1, "42000", "Duplicated createtime"
+OB_ERR_MODIFYTIME_DUPLICATE, -5027, -1, "42000", "Duplicated modifytime"
+OB_ERR_ILLEGAL_INDEX, -5028, ER_NO_SUCH_INDEX, "42S12", "Illegal index", OER_INVALID_COLUMN_INDEX, "invalid column index"
+OB_ERR_INVALID_SCHEMA, -5029, -1, "HY000", "Invalid schema"
+OB_ERR_INSERT_NULL_ROWKEY, -5030, ER_PRIMARY_CANT_HAVE_NULL, "42000", "Insert null rowkey", "Insert null rowkey", OER_CANNOT_INSERT_NULL, "cannot insert NULL into", "cannot insert NULL rowkey"
+OB_ERR_COLUMN_NOT_FOUND, -5031, -1, "HY000", "Column not found"
+OB_ERR_DELETE_NULL_ROWKEY, -5032, -1, "23000", "Delete null rowkey"
+OB_ERR_USER_EMPTY, -5034, -1, "01007", "No user"
+OB_ERR_USER_NOT_EXIST, -5035, ER_NO_SUCH_USER, "01007", "User not exist"
+s
+OB_ERR_NO_AVAILABLE_PRIVILEGE_ENTRY, -5037, -1, "HY000", "No privilege entry"
+OB_ERR_WRONG_PASSWORD, -5038, ER_PASSWORD_NO_MATCH, "42000", "Incorrect password"
+OB_ERR_USER_IS_LOCKED, -5039, -1, "01007", "User locked"
+OB_ERR_UPDATE_ROWKEY_COLUMN, -5040, -1, "42000", "Can not update rowkey column"
+OB_ERR_UPDATE_JOIN_COLUMN, -5041, -1, "42000", "Can not update join column"
+s
+OB_ERR_PREPARE_STMT_NOT_FOUND, -5043, ER_UNKNOWN_STMT_HANDLER, "HY007", "Unknown prepared statement", "statement not prepared, stmt_id=%u"
+OB_ERR_SYS_VARIABLE_UNKNOWN, -5044, ER_UNKNOWN_SYSTEM_VARIABLE, "HY000", "Unknown system variable", "Unknown system variable '%.*s'"
+OB_ERR_OLDER_PRIVILEGE_VERSION, -5046, -1, "HY000", "Older privilege version"
+s
+OB_ERR_USER_EXIST, -5050, -1, "42710", "User exists", OER_USER_EXISTS, "user name conflicts with another user or role name"
+OB_ERR_PASSWORD_EMPTY, -5051, -1, "HY000", "Empty password"
+OB_ERR_GRANT_PRIVILEGES_TO_CREATE_TABLE, -5052, -1, "42000", "Failed to grant privelege"
+OB_ERR_WRONG_DYNAMIC_PARAM, -5053, -1, "HY093", "Wrong dynamic parameters", "Incorrect arguments number to EXECUTE, need %ld arguments but give %ld"
+OB_ERR_PARAM_SIZE, -5054, ER_WRONG_PARAMCOUNT_TO_NATIVE_FCT, "42000", "Incorrect parameter count", "Incorrect parameter count in the call to native function '%.*s'", OER_INVALID_ARGUMENTS_NUMBER, "invalid number of arguments", "invalid number of arguments in the call to native function '%.*s'"
+OB_ERR_FUNCTION_UNKNOWN, -5055, ER_SP_DOES_NOT_EXIST, "42000", "FUNCTION does not exist", "FUNCTION %.*s does not exist"
+OB_ERR_CREAT_MODIFY_TIME_COLUMN, -5056, -1, "23000", "CreateTime or ModifyTime column cannot be modified"
+OB_ERR_MODIFY_PRIMARY_KEY, -5057, -1, "23000", "Primary key cannot be modified"
+OB_ERR_PARAM_DUPLICATE, -5058, -1, "42000", "Duplicated parameters"
+OB_ERR_TOO_MANY_SESSIONS, -5059, ER_TOO_MANY_USER_CONNECTIONS, "42000", "Too many sessions"
+OB_ERR_TOO_MANY_PS, -5061, -1, "54023", "Too many prepared statements"
+OB_ERR_HINT_UNKNOWN, -5063, -1, "42000", "Unknown hint"
+OB_ERR_WHEN_UNSATISFIED, -5064, -1, "23000", "When condition not satisfied"
+OB_ERR_QUERY_INTERRUPTED, -5065, ER_QUERY_INTERRUPTED, "70100", "Query execution was interrupted"
+OB_ERR_SESSION_INTERRUPTED, -5066, -1, "HY000", "Session interrupted", OER_DISCONNECTION_FORCED, "OceanBase instance terminated. Disconnection forced"
+OB_ERR_UNKNOWN_SESSION_ID, -5067, -1, "HY000", "Unknown session ID"
+OB_ERR_PROTOCOL_NOT_RECOGNIZE, -5068, -1, "HY000", "Incorrect protocol"
+OB_ERR_WRITE_AUTH_ERROR, -5069, -1, "HY000", "Write auth packet error"
+OB_ERR_PARSE_JOIN_INFO, -5070, -1, "42000", "Wrong join info"
+OB_ERR_ALTER_INDEX_COLUMN, -5071, -1, "42000", "Cannot alter index column"
+OB_ERR_MODIFY_INDEX_TABLE, -5072, -1, "42000", "Cannot modify index table"
+OB_ERR_INDEX_UNAVAILABLE, -5073, ER_NO_SUCH_INDEX, "42000", "Index unavailable"
+OB_ERR_NOP_VALUE, -5074, -1, "23000", "NOP cannot be used here"
+OB_ERR_PS_TOO_MANY_PARAM, -5080, ER_PS_MANY_PARAM, "54000", "Prepared statement contains too many placeholders"
+OB_ERR_READ_ONLY, -5081, -1, "25000", "The server is read only now"
+OB_ERR_INVALID_TYPE_FOR_OP, -5083, -1, "22000", "Invalid data type for the operation", "invalid obj type for type promotion: left_type=%s right_type=%s", OER_INCONSISTENT_DATATYPES, "inconsistent datatypes", "inconsistent datatypes: left_type=%s right_type=%s"
+OB_ERR_CAST_VARCHAR_TO_BOOL, -5084, -1, "22000", "Can not cast varchar value to bool type"
+OB_ERR_CAST_VARCHAR_TO_NUMBER, -5085, -1, "22000", "Not a number Can not cast varchar value to number type"
+OB_ERR_CAST_VARCHAR_TO_TIME, -5086, -1, "22000", "Not timestamp Can not cast varchar value to timestamp type"
+OB_ERR_CAST_NUMBER_OVERFLOW, -5087, -1, "22000", "Result value was out of range when cast to number"
+%ld,%ld
+%ld,%ld
+OB_SCHEMA_NUMBER_PRECISION_OVERFLOW, -5090, -1, "22000", "Precision was out of range"
+OB_SCHEMA_NUMBER_SCALE_OVERFLOW, -5091, -1, "22000", "Scale value was out of range"
+OB_ERR_INDEX_UNKNOWN, -5092, -1, "42000", "Unknown index"
+OB_NUMERIC_OVERFLOW, -5093, -1, "22003", "numeric overflow", OER_NUMERIC_OVERFLOW, "numeric overflow"
+OB_ERR_TOO_MANY_JOIN_TABLES, -5094, -1, "HY000", "too many joined tables"
+%d>%ld
+OB_ERR_SYS_CONFIG_UNKNOWN, -5099, -1, "42000", "System config unknown"
+OB_ERR_LOCAL_VARIABLE, -5100, ER_LOCAL_VARIABLE, "HY000", "Local variable", "Variable \'%.*s\' is a SESSION variable and can't be used with SET GLOBAL"
+OB_ERR_GLOBAL_VARIABLE, -5101, ER_GLOBAL_VARIABLE, "HY000", "Global variable", "Variable \'%.*s\' is a GLOBAL variable and should be set with SET GLOBAL"
+OB_ERR_VARIABLE_IS_READONLY, -5102, ER_VARIABLE_IS_READONLY, "HY000", "variable is read only", "%.*s variable '%.*s' is read-only. Use SET %.*s to assign the value"
+OB_ERR_INCORRECT_GLOBAL_LOCAL_VAR, -5103, ER_INCORRECT_GLOBAL_LOCAL_VAR, "HY000", "incorrect global or local variable", "Variable '%.*s' is a %.*s variable"
+%ld
+%ld
+
+OB_INVALID_ARGUMENT_FOR_IS, -5107, -1, "42000", "Invalid argument for IS operator", "Invalid operand type for IS operator, lval=%s"
+
+
+
+
+OB_ERR_USER_VARIABLE_UNKNOWN, -5112, -1, "42P01", "Unknown user variable", "Variable %.*s does not exists"
+
+OB_INVALID_NUMERIC, -5114, -1, "42000", "Invalid numeric", "Invalid numeric char '%c'", OER_INVALID_NUMBER, "invalid number", "invalid number char '%c'"
+sub
+OB_SQL_LOG_OP_SETCHILD_OVERFLOW, -5116, -1, "HY000", "Logical operator child index overflow"
+OB_SQL_EXPLAIN_FAILED, -5117, -1, "HY000", "fail to explain plan"
+OB_SQL_OPT_COPY_OP_FAILED, -5118, -1, "HY000", "fail to copy logical operator"
+OB_SQL_OPT_GEN_PLAN_FALIED, -5119, -1, "HY000", "fail to generate plan"
+OB_SQL_OPT_CREATE_RAWEXPR_FAILED, -5120, -1,  "HY000", "fail to create raw expr"
+OB_SQL_OPT_JOIN_ORDER_FAILED, -5121, -1,  "HY000", "fail to generate join order"
+OB_SQL_OPT_ERROR, -5122, -1,  "HY000", "optimizer general error"
+OB_SQL_RESOLVER_NO_MEMORY, -5130, -1, "HY000", "sql resolver no memory"
+OB_SQL_DML_ONLY, -5131, -1, "HY000", "plan cache support dml only"
+OB_ERR_NO_GRANT, -5133, -1, "42000", "No such grant defined"
+OB_ERR_NO_DB_SELECTED, -5134, ER_NO_DB_ERROR, "3D000", "No database selected"
+OB_SQL_PC_OVERFLOW, -5135, -1, "HY000", "plan cache is overflow"
+OB_SQL_PC_PLAN_DUPLICATE, -5136, -1, "HY000", "plan exists in plan cache already"
+OB_SQL_PC_PLAN_EXPIRE, -5137, -1, "HY000", "plan is expired"
+OB_SQL_PC_NOT_EXIST, -5138, -1, "HY000", "no plan exist"
+OB_SQL_PARAMS_LIMIT, -5139, -1, "HY000", "too many params, plan cache not support" 
+OB_SQL_PC_PLAN_SIZE_LIMIT, -5140, -1, "HY000", "plan is too big to add to plan cache"
+OB_ERR_UNKNOWN_CHARSET, -5142, ER_UNKNOWN_CHARACTER_SET, "42000", "Unknown character set", "Unknown character set: '%.*s'"
+OB_ERR_UNKNOWN_COLLATION, -5143, ER_UNKNOWN_COLLATION, "HY000", "Unknown collation", "Unknown collation: '%.*s'"
+OB_ERR_COLLATION_MISMATCH, -5144, ER_COLLATION_CHARSET_MISMATCH, "42000", "The collation is not valid for the character set", "COLLATION '%.*s' is not valid for CHARACTER SET '%.*s'"
+OB_ERR_WRONG_VALUE_FOR_VAR, -5145, ER_WRONG_VALUE_FOR_VAR, "42000", "Variable can't be set to the value", "Variable \'%.*s\' can't be set to the value of \'%.*s\'"
+OB_UNKNOWN_PARTITION, -5146, ER_UNKNOWN_PARTITION, "HY000", "Unknown partition", "Unkown partition '%.*s' in table '%.*s'"
+OB_PARTITION_NOT_MATCH, -5147, ER_ROW_DOES_NOT_MATCH_GIVEN_PARTITION_SET, "HY000", "Found a row not matching the given partition set"
+OB_ER_PASSWD_LENGTH, -5148, -1, "HY000", " Password hash should be a 40-digit hexadecimal number"
+OB_ERR_INSERT_INNER_JOIN_COLUMN, -5149, -1, "07000", "Insert inner join column error"
+OB_TENANT_NOT_IN_SERVER, -5150, -1, "HY000", "Tenant not in this server"
+OB_TABLEGROUP_NOT_EXIST, -5151, -1, "42P01", "tablegroup not exist"
+OB_SUBQUERY_TOO_MANY_ROW, -5153, ER_SUBQUERY_NO_1_ROW, "21000", "Subquery returns more than 1 row"
+OB_ERR_BAD_DATABASE, -5154, ER_BAD_DB_ERROR, "42000", "Unknown database", "Unknown database '%.*s'"
+OB_CANNOT_USER, -5155, ER_CANNOT_USER, "HY000", "User operation failed", "Operation %.*s failed for %.*s"
+OB_TENANT_EXIST, -5156, -1, "HY000", "tenant already exist", "tenant \'%s\' already exist"
+OB_TENANT_NOT_EXIST, -5157, -1, "HY000", "Unknown tenant", "Unknown tenant '%.*s'"
+OB_DATABASE_EXIST, -5158, ER_DB_CREATE_EXISTS, "HY000", "Can't create database;database exists", "Can't create database '%.*s'; database exists"
+OB_TABLEGROUP_EXIST, -5159, -1, "HY000", "tablegroup already exist"
+OB_ERR_INVALID_TENANT_NAME, -5160, -1, "HY000", "invalid tenant name specified in connection string"
+OB_EMPTY_TENANT, -5161, -1, "HY000", "tenant is empty"
+OB_WRONG_DB_NAME, -5162, ER_WRONG_DB_NAME, "42000", "Incorrect database name", "Incorrect database name '%.*s'"
+OB_WRONG_TABLE_NAME, -5163, ER_WRONG_TABLE_NAME, "42000", "Incorrect table name", "Incorrect table name '%.*s'", OER_INVALID_TABLE_NAME, "invalid table name", "invalid table name '%.*s'"
+OB_WRONG_COLUMN_NAME, -5164, ER_WRONG_COLUMN_NAME, "42000", "Incorrect column name", "Incorrect column name '%.*s'", OER_INVALID_COLUMN_NAME, "invalid column name", "invalid column name '%.*s'"
+OB_ERR_COLUMN_SPEC, -5165, ER_WRONG_FIELD_SPEC, "42000", "Incorrect column specifier", "Incorrect column specifier for column '%.*s'"
+OB_ERR_DB_DROP_EXISTS, -5166, ER_DB_DROP_EXISTS, "HY000", "Can't drop database;database doesn't exist", "Can't drop database '%.*s'; database doesn't exist"
+OB_ERR_DATA_TOO_LONG, -5167, ER_DATA_TOO_LONG, "22001", "Data too long for column", "Data too long for column '%.*s' at row %lld"
+OB_ERR_WRONG_VALUE_COUNT_ON_ROW, -5168, ER_WRONG_VALUE_COUNT_ON_ROW, "21S01", "column count does not match value count", "column count does not match value count at row '%d'"
+OB_ERR_CREATE_USER_WITH_GRANT, -5169, ER_CANT_CREATE_USER_WITH_GRANT, "42000", "You are not allowed to create a user with GRANT"
+OB_ERR_NO_DB_PRIVILEGE, -5170, ER_DBACCESS_DENIED_ERROR, "42000", "Access denied for user to database", "Access denied for user '%.*s'@'%.*s' to database '%.*s'"
+OB_ERR_NO_TABLE_PRIVILEGE, -5171, ER_TABLEACCESS_DENIED_ERROR, "42000", "Command denied to user for table", "%.*s command denied to user '%.*s'@'%.*s' for table '%.*s'"
+OB_INVALID_ON_UPDATE, -5172, ER_INVALID_ON_UPDATE, "HY000", "Invalid ON UPDATE clause", "Invalid ON UPDATE clause for \'%s\' column"
+OB_INVALID_DEFAULT, -5173, ER_INVALID_DEFAULT, "42000", "Invalid default value", "Invalid default value for \'%.*s\'"
+OB_ERR_UPDATE_TABLE_USED, -5174, ER_UPDATE_TABLE_USED, "HY000", "Update table used", "You can\'t specify target table \'%s\' for update in FROM clause"
+OB_ERR_COULUMN_VALUE_NOT_MATCH, -5175, ER_WRONG_VALUE_COUNT_ON_ROW, "21S01", "Column count doesn\'t match value count", "Column count doesn\'t match value count at row %ld"
+OB_ERR_INVALID_GROUP_FUNC_USE, -5176, ER_INVALID_GROUP_FUNC_USE, "HY000", "Invalid use of group function"
+OB_CANT_AGGREGATE_2COLLATIONS, -5177, ER_CANT_AGGREGATE_2COLLATIONS, "HY000", "Illegal mix of collations", "Illegal mix of collations"
+OB_ERR_FIELD_TYPE_NOT_ALLOWED_AS_PARTITION_FIELD, -5178, ER_FIELD_TYPE_NOT_ALLOWED_AS_PARTITION_FIELD, "HY000", "Field is of a not allowed type for this type of partitioning", "Field \'%.*s\' is of a not allowed type for this type of partitioning"
+OB_ERR_TOO_LONG_IDENT, -5179, ER_TOO_LONG_IDENT, "42000", "Identifier name is too long", "Identifier name \'%.*s\' is too long"
+OB_ERR_WRONG_TYPE_FOR_VAR, -5180, ER_WRONG_TYPE_FOR_VAR, "42000", "Incorrect argument type to variable", "Incorrect argument type to variable '%.*s'"
+should be no longer than 16
+OB_ERR_PRIV_USAGE, -5182, ER_WRONG_USAGE, "HY000", "Incorrect usage of DB GRANT and GLOBAL PRIVILEGES"
+OB_ILLEGAL_GRANT_FOR_TABLE, -5183, ER_ILLEGAL_GRANT_FOR_TABLE, "42000", "Illegal GRANT/REVOKE command; please consult the manual to see which privileges can be used"
+OB_ERR_REACH_AUTOINC_MAX, -5184, ER_AUTOINC_READ_FAILED, "HY000", "Failed to read auto-increment value from storage engine"
+OB_ERR_NO_TABLES_USED, -5185, ER_NO_TABLES_USED, "HY000", "No tables used"
+OB_CANT_REMOVE_ALL_FIELDS, -5187, ER_CANT_REMOVE_ALL_FIELDS, "42000", "You can't delete all columns with ALTER TABLE; use DROP TABLE instead"
+including subpartitions
+OB_NO_PARTS_ERROR, -5189, ER_NO_PARTS_ERROR, "HY000", "Number of partitions = 0 is not an allowed value", "Number of partitions = 0 is not an allowed value"
+OB_WRONG_SUB_KEY, -5190, ER_WRONG_SUB_KEY, "HY000", "Incorrect prefix key; the used key part isn't a string, the used length is longer than the key part, or the storage engine doesn't support unique prefix keys"
+OB_KEY_PART_0, -5191, ER_KEY_PART_0, "HY000", "Key part length cannot be 0", "Key part \'%.*s\' length cannot be 0"
+OB_ERR_UNKNOWN_TIME_ZONE, -5192, ER_UNKNOWN_TIME_ZONE, "HY000", "Unknown or incorrect time zone", "Unknown or incorrect time zone: \'%.*s\'", OER_TIMEZONE_REGION_STRING_NOT_FOUND, "timezone region string not found", "timezone region string not found"
+OB_ERR_WRONG_AUTO_KEY, -5193, ER_WRONG_AUTO_KEY, "42000", "Incorrect table definition; there can be only one auto column"
+OB_ERR_TOO_MANY_KEYS, -5194, ER_TOO_MANY_KEYS, "42000","Too many keys specified", "Too many keys specified; max %d keys allowed"
+OB_ERR_TOO_MANY_ROWKEY_COLUMNS, -5195, ER_TOO_MANY_KEY_PARTS, "42000","Too many key parts specified", "Too many key parts specified; max %d parts allowed"
+OB_ERR_TOO_LONG_KEY_LENGTH, -5196, ER_TOO_LONG_KEY, "42000", "Specified key was too long", "Specified key was too long; max key length is %d bytes"
+OB_ERR_TOO_MANY_COLUMNS, -5197, ER_TOO_MANY_FIELDS, "42000", "Too many columns"
+max = %d byte
+OB_ERR_TOO_BIG_ROWSIZE, -5199, ER_TOO_BIG_ROWSIZE, "42000", "Row size too large"
+OB_ERR_UNKNOWN_TABLE, -5200, ER_UNKNOWN_TABLE, "42S02", "Unknown table", "Unknown table '%.*s' in %.*s"
+OB_ERR_BAD_TABLE, -5201, ER_BAD_TABLE_ERROR, "42S02", "Unknown table", "Unknown table '%.*s'", OER_TABLE_OR_VIEW_NOT_EXIST, "table or view does not exist", "table or view '%.*s' does not exist"
+OB_ERR_TOO_BIG_SCALE, -5202, ER_TOO_BIG_SCALE, "42000", "Too big scale %d specified for column '%s'. Maximum is %ld."
+OB_ERR_TOO_BIG_PRECISION, -5203, ER_TOO_BIG_PRECISION, "42000", "Too big precision %d specified for column '%s'. Maximum is %ld."
+column '%s'
+max = %ld
+OB_WRONG_GROUP_FIELD, -5206, ER_WRONG_GROUP_FIELD, "42000", "Can't group on '%.*s'"
+OB_NON_UNIQ_ERROR, -5207, ER_NON_UNIQ_ERROR, "23000", "Column is ambiguous", "Column '%.*s' in %.*s is ambiguous", OER_COLUMN_AMBIGUOUS, "column '%.*s' in %.*s ambiguously defined", "column '%.*s' in %.*s ambiguously defined"
+OB_ERR_NONUNIQ_TABLE, -5208, ER_NONUNIQ_TABLE, "42000", "Not unique table/alias", "Not unique table/alias: \'%.*s\'"
+OB_ERR_CANT_DROP_FIELD_OR_KEY, -5209, ER_CANT_DROP_FIELD_OR_KEY, "42000", "Can't DROP Column; check that column/key exists", "Can't DROP '%.*s'; check that column/key exists", OER_INDEX_NOT_EXISTS, "specified index does not exist", "specified index '%.*s' does not exist"
+OB_ERR_MULTIPLE_PRI_KEY, -5210, ER_MULTIPLE_PRI_KEY, "42000", "Multiple primary key defined"
+OB_ERR_KEY_COLUMN_DOES_NOT_EXITS, -5211, ER_KEY_COLUMN_DOES_NOT_EXITS, "42000", "Key column doesn't exist in table", "Key column '%.*s' doesn't exist in table"
+OB_ERR_AUTO_PARTITION_KEY, -5212, -1, "42000", "auto-increment column should not be part of partition key", "auto-increment column '%.*s' should not be part of partition key"
+OB_ERR_CANT_USE_OPTION_HERE, -5213, ER_CANT_USE_OPTION_HERE, "42000", "Incorrect usage/placement", "Incorrect usage/placement of '%s'"
+OB_ERR_WRONG_OBJECT, -5214, ER_WRONG_OBJECT, "HY000", "Wrong object", "\'%s.%s\' is not %s"
+OB_ERR_ON_RENAME, -5215, ER_ERROR_ON_RENAME, "HY000", "Error on rename table", "Error on rename of \'%s.%s\' to \'%s.%s\'"
+OB_ERR_WRONG_KEY_COLUMN, -5216, ER_WRONG_KEY_COLUMN, "42000", "The used storage engine can't index column", "The used storage engine can't index column '%.*s'", OER_DATATYPE_CANNOT_BE_UNIQUE_PRIMARY_KEY, "column of datatype string cannot be unique or a primary key", "column '%.*s' of datatype string cannot be unique or a primary key"
+OB_ERR_BAD_FIELD_ERROR, -5217, ER_BAD_FIELD_ERROR, "42S22", "Unknown column", "Unknown column '%.*s' in '%.*s'", OER_INVALID_IDENTIFIER, "invalid identifier", "invalid identifier '%.*s' in '%.*s'"
+OB_ERR_WRONG_FIELD_WITH_GROUP, -5218, ER_WRONG_FIELD_WITH_GROUP, "42000", "column is not in GROUP BY", "\'%.*s\' is not in GROUP BY", OER_WRONG_FIELD_WITH_GROUP, "not a GROUP BY expression", "\'%.*s\' not a GROUP BY expression"
+OB_ERR_CANT_CHANGE_TX_CHARACTERISTICS, -5219, ER_CANT_CHANGE_TX_CHARACTERISTICS, "25001", "Transaction characteristics can't be changed while a transaction is in progress"
+OB_ERR_CANT_EXECUTE_IN_READ_ONLY_TRANSACTION, -5220, ER_CANT_EXECUTE_IN_READ_ONLY_TRANSACTION, "25006", "Cannot execute statement in a READ ONLY transaction."
+
+OB_ERR_TRUNCATED_WRONG_VALUE, -5222, ER_TRUNCATED_WRONG_VALUE, "22007", "Incorrect value", "Truncated incorrect %.*s value: '%.*s'"
+OB_ERR_WRONG_IDENT_NAME, -5223, -1, "42000", "wrong ident name"
+OB_WRONG_NAME_FOR_INDEX, -5224, ER_WRONG_NAME_FOR_INDEX, "42000", "Incorrect index name", "Incorrect index name '%.*s'"
+reference to group function
+OB_REACH_MEMORY_LIMIT, -5226, -1, "42000", "plan cache memory used reach the high water mark."
+
+OB_ERR_NON_UPDATABLE_TABLE, -5228, ER_NON_UPDATABLE_TABLE, "HY000", "The target table is not updatable", "The target table %.*s of the %.*s is not updatable"
+OB_ERR_WARN_DATA_OUT_OF_RANGE, -5229, ER_WARN_DATA_OUT_OF_RANGE, "22003", "Out of range value for column", "Out of range value for column '%.*s' at row %ld"
+sub
+s
+OB_ERR_OPTION_PREVENTS_STATEMENT, -5233, ER_OPTION_PREVENTS_STATEMENT, "HY000", "The MySQL server is running with the --read-only option so it cannot execute this statement"
+OB_ERR_DB_READ_ONLY, -5234, -1, "HY000", "The database is read only so it cannot execute this statement", "The database \'%.*s\' is read only so it cannot execute this statement"
+OB_ERR_TABLE_READ_ONLY, -5235, -1, "HY000", "The table is read only so it cannot execute this statement", "The table \'%.*s.%.*s\' is read only so it cannot execute this statement"
+OB_ERR_LOCK_OR_ACTIVE_TRANSACTION, -5236, ER_LOCK_OR_ACTIVE_TRANSACTION, "HY000", "Can't execute the given command because you have active locked tables or an active transaction"
+OB_ERR_SAME_NAME_PARTITION_FIELD, -5237, ER_SAME_NAME_PARTITION_FIELD, "HY000", "Duplicate partition field name", "Duplicate partition field name '%.*s'"
+OB_ERR_TABLENAME_NOT_ALLOWED_HERE, -5238, ER_TABLENAME_NOT_ALLOWED_HERE, "42000", "Table from one of the SELECTs cannot be used in global ORDER clause", "Table \'%.*s\' from one of the SELECTs cannot be used in global ORDER clause"
+OB_ERR_VIEW_RECURSIVE, -5239, ER_VIEW_RECURSIVE, "42S22", "view contains recursion", "\'%.*s'.'%.*s\' contains view recursion"
+OB_ERR_QUALIFIER, -5240, -1, "HY000", "Column part of USING clause cannot have qualifier"
+OB_ERR_WRONG_VALUE, -5241, ER_WRONG_VALUE, "HY000", "Incorrect %s value: '%s'"
+OB_ERR_VIEW_WRONG_LIST, -5242, ER_VIEW_WRONG_LIST,  "HY000", "View's SELECT and view's field list have different column counts"
+OB_SYS_VARS_MAYBE_DIFF_VERSION, -5243, -1,  "HY000", "system variables' version maybe different"
+OB_ERR_AUTO_INCREMENT_CONFLICT, -5244, ER_AUTO_INCREMENT_CONFLICT, "HY000", "Auto-increment value in UPDATE conflicts with internally generated values"
+OB_ERR_TASK_SKIPPED, -5245, -1, "HY000", "some tasks are skipped", "some tasks are skipped, skipped server addr is '%s', the orginal error code is %d"
+OB_ERR_NAME_BECOMES_EMPTY, -5246, ER_NAME_BECOMES_EMPTY, "HY000", "Name has become ''", "Name \'%.*s\' has become ''"
+OB_ERR_REMOVED_SPACES, -5247, ER_REMOVED_SPACES, "HY000", "Leading spaces are removed from name ", "Leading spaces are removed from name \'%.*s\'"
+OB_WARN_ADD_AUTOINCREMENT_COLUMN, -5248, -1, "HY000", "Alter table add auto_increment column is dangerous", "Alter table add auto_increment column is dangerous, table_name=\'%.*s\', column_name=\'%s\'"
+OB_WARN_CHAMGE_NULL_ATTRIBUTE, -5249, -1, "HY000", "Alter table change nullable column to not nullable is dangerous", "Alter table change nullable column to not nullable is dangerous, table_name=\'%.*s\', column_name=\'%.*s\'"
+OB_ERR_INVALID_CHARACTER_STRING, -5250, ER_INVALID_CHARACTER_STRING, "HY000", "Invalid character string", "Invalid %.*s character string: \'%.*s\'"
+OB_ERR_KILL_DENIED, -5251, ER_KILL_DENIED_ERROR, "HY000", "You are not owner of thread", "You are not owner of thread %lu"
+OB_ERR_COLUMN_DEFINITION_AMBIGUOUS, -5252, -1, "HY000", "Column definition is ambiguous. Column has both NULL and NOT NULL attributes", "Column definition is ambiguous. Column has both NULL and NOT NULL attributes"
+OB_ERR_EMPTY_QUERY, -5253, ER_EMPTY_QUERY, "42000", "Query was empty"
+
+OB_ERR_FIELD_NOT_FOUND_PART, -5255, ER_FIELD_NOT_FOUND_PART_ERROR, "HY000", "Field in list of fields for partition function not found in table"
+OB_ERR_PRIMARY_CANT_HAVE_NULL, -5256, ER_PRIMARY_CANT_HAVE_NULL, "42000", "All parts of a PRIMARY KEY must be NOT NULL; if you need NULL in a key, use UNIQUE instead"
+OB_ERR_PARTITION_FUNC_NOT_ALLOWED_ERROR, -5257, ER_PARTITION_FUNC_NOT_ALLOWED_ERROR, "HY000", "The PARTITION function returns the wrong type"
+OB_ERR_INVALID_BLOCK_SIZE, -5258, -1, "HY000", "Invalid block size, block size should between 16384 and 1048576"
+OB_ERR_UNKNOWN_STORAGE_ENGINE, -5259, ER_UNKNOWN_STORAGE_ENGINE, "42000", "Unknown storage engine", "Unknown storage engine \'%.*s\'"
+OB_ERR_TENANT_IS_LOCKED, -5260, -1, "HY000", "Tenant is locked", "Tenant \'%.*s\' is locked"
+OB_EER_UNIQUE_KEY_NEED_ALL_FIELDS_IN_PF, -5261, ER_UNIQUE_KEY_NEED_ALL_FIELDS_IN_PF, "HY000", "A UNIQUE INDEX/PRIMARY KEY must include all columns in the table's partitioning function", "A %s must include all columns in the table's partitioning function";
+OB_ERR_PARTITION_FUNCTION_IS_NOT_ALLOWED, -5262, ER_PARTITION_FUNCTION_IS_NOT_ALLOWED, "HY000", "This partition function is not allowed"
+OB_ERR_AGGREGATE_ORDER_FOR_UNION, -5263, ER_AGGREGATE_ORDER_FOR_UNION, "HY000", "aggregate order for union", "Expression #%d of ORDER BY contains aggregate function and applies to a UNION"
+OB_ERR_OUTLINE_EXIST, -5264, -1, "HY000", "Outline exists", "Outline '%.*s' already exists"
+OB_OUTLINE_NOT_EXIST, -5265, -1, "HY000", "Outline not exists", "Outline \'%.*s.%.*s\' doesn\'t exist"
+OB_WARN_OPTION_BELOW_LIMIT, -5266, WARN_OPTION_BELOW_LIMIT, "HY000", "The value should be no less than the limit", "The value of \'%s\' should be no less than the value of \'%s\'"
+OB_INVALID_OUTLINE, -5267, -1, "HY000", "invalid outline", "invalid outline ,error info:%s"
+OB_REACH_MAX_CONCURRENT_NUM, -5268, -1, "HY000", "SQL reach max concurrent num", "SQL reach max concurrent num %ld"
+OB_ERR_OPERATION_ON_RECYCLE_OBJECT, -5269, -1, "HY000", "can not perform DDL/DML over objects in Recycle Bin"
+OB_ERR_OBJECT_NOT_IN_RECYCLEBIN, -5270, -1, "HY000", "object not in RECYCLE BIN"
+OB_ERR_CON_COUNT_ERROR, -5271, ER_CON_COUNT_ERROR, "08004", "Too many connections"
+OB_ERR_OUTLINE_CONTENT_EXIST, -5272, -1, "HY000", "Outline content already exists when added", "Outline content '%.*s' of outline '%.*s' already exists when added"
+OB_ERR_OUTLINE_MAX_CONCURRENT_EXIST, -5273, -1, "HY000", "Max concurrent already exists when added", "Max concurrent in outline '%.*s' already exists when added"
+OB_ERR_VALUES_IS_NOT_INT_TYPE_ERROR, -5274, ER_VALUES_IS_NOT_INT_TYPE_ERROR, "HY000", "VALUES value for partition must have type INT", "VALUES value for partition \'%.*s\' must have type INT"
+OB_ERR_WRONG_TYPE_COLUMN_VALUE_ERROR, -5275, ER_WRONG_TYPE_COLUMN_VALUE_ERROR, "HY000", "Partition column values of incorrect type"
+OB_ERR_PARTITION_COLUMN_LIST_ERROR, -5276, ER_PARTITION_COLUMN_LIST_ERROR, "HY000", "Inconsistency in usage of column lists for partitioning"
+OB_ERR_TOO_MANY_VALUES_ERROR, -5277, ER_TOO_MANY_VALUES_ERROR, "HY000", "Cannot have more than one value for this type of RANGE partitioning"
+OB_ERR_PARTITION_VALUE_ERROR, -5278, -1, "HY000", "This partition value with incorrect charset type"
+OB_ERR_PARTITION_INTERVAL_ERROR, -5279, -1, "HY000", "Partition interval must have type INT"
+OB_ERR_SAME_NAME_PARTITION, -5280, ER_SAME_NAME_PARTITION, "HY000", "Duplicate partition name", "Duplicate partition name \'%.*s\'"
+OB_ERR_RANGE_NOT_INCREASING_ERROR, -5281, ER_RANGE_NOT_INCREASING_ERROR, "HY000", "VALUES LESS THAN value must be strictly increasing for each partition"
+OB_ERR_PARSE_PARTITION_RANGE, -5282, ER_PARSE_ERROR, "42000", "Wrong number of partitions defined, mismatch with previous setting"
+OB_ERR_UNIQUE_KEY_NEED_ALL_FIELDS_IN_PF, -5283, ER_UNIQUE_KEY_NEED_ALL_FIELDS_IN_PF, "HY000", "A PRIMARY KEY must include all columns in the table\'s partitioning function"
+OB_NO_PARTITION_FOR_GIVEN_VALUE, -5284, ER_NO_PARTITION_FOR_GIVEN_VALUE, "HY000", "Table has no partition for value"
+OB_EER_NULL_IN_VALUES_LESS_THAN, -5285, ER_NULL_IN_VALUES_LESS_THAN, "HY000", "Not allowed to use NULL value in VALUES LESS THAN"
+OB_ERR_PARTITION_CONST_DOMAIN_ERROR, -5286, ER_PARTITION_CONST_DOMAIN_ERROR, "HY000", "Partition constant is out of partition function domain"
+OB_ERR_TOO_MANY_PARTITION_FUNC_FIELDS, -5287, ER_TOO_MANY_PARTITION_FUNC_FIELDS_ERROR, "HY000", "Too many fields in \'list of partition fields\'"
+OB_ERR_BAD_FT_COLUMN, -5288, ER_BAD_FT_COLUMN, "HY000", "Column cannot be part of FULLTEXT index", "Column '%.*s' cannot be part of FULLTEXT index"
+OB_ERR_KEY_DOES_NOT_EXISTS, -5289, ER_KEY_DOES_NOT_EXITS, "42000", "key does not exist in table", "Key '%.*s' doesn't exist in table '%.*s'"
+OB_NON_DEFAULT_VALUE_FOR_GENERATED_COLUMN, -5290, ER_NON_DEFAULT_VALUE_FOR_GENERATED_COLUMN, "HY000", "non-default value for generated column is not allowed", "The value specified for generated column '%.*s' in table '%.*s' is not allowed"
+OB_ERR_BAD_CTXCAT_COLUMN, -5291, -1, "HY000", "The CTXCAT column must be contiguous in the index column list"
+OB_ERR_UNSUPPORTED_ACTION_ON_GENERATED_COLUMN, -5292, ER_UNSUPPORTED_ACTION_ON_GENERATED_COLUMN, "HY000", "not supported for generated columns", "'%s' is not supported for generated columns."
+OB_ERR_DEPENDENT_BY_GENERATED_COLUMN, -5293, ER_DEPENDENT_BY_GENERATED_COLUMN, "HY000", "Column has a generated column dependency", "Column '%.*s' has a generated column dependency"
+OB_ERR_TOO_MANY_ROWS, -5294, ER_TOO_MANY_ROWS, "42000", "Result consisted of more than one row", OER_EXACT_FETCH_RETURN_MORE_ROWS, "exact fetch returns more than requested number of rows"
+OB_WRONG_FIELD_TERMINATORS, -5295, ER_WRONG_FIELD_TERMINATORS, "42000", "Field separator argument is not what is expected; check the manual"
+OB_NO_READABLE_REPLICA, -5296, -1, "42000", "there has no readable replica"
+OB_ERR_UNEXPECTED_TZ_TRANSITION, -5297, -1, "HY000", "unexpected time zone info transition"
+OB_ERR_SYNONYM_EXIST, -5298, -1, "HY000", "synonym exists", "synonym '%.*s' already exists"
+OB_SYNONYM_NOT_EXIST, -5299, -1, "HY000", "synonym not exists", "synonym \'%.*s.%.*s\' doesn\'t exist"
+OB_ERR_MISS_ORDER_BY_EXPR, -5300, -1, "HY000", "missing ORDER BY expression in the window specification", "missing ORDER BY expression in the window specification"
+OB_ERR_NOT_CONST_EXPR, -5301, -1, "HY000", "The argument of the window function should be a constant for a partition", "The argument of the window function should be a constant for a partition"
+OB_ERR_PARTITION_MGMT_ON_NONPARTITIONED, -5302, ER_PARTITION_MGMT_ON_NONPARTITIONED, "HY000", "Partition management on a not partitioned table is not possible"
+OB_ERR_DROP_PARTITION_NON_EXISTENT, -5303, ER_DROP_PARTITION_NON_EXISTENT, "HY000", "Error in list of partitions", "Error in list of partitions to %s"
+OB_ERR_PARTITION_MGMT_ON_TWOPART_TABLE, -5304, -1, "HY000", "Partition management on a two-part table is not possible"
+OB_ERR_ONLY_ON_RANGE_LIST_PARTITION, -5305, ER_ONLY_ON_RANGE_LIST_PARTITION, "HY000", "can only be used on RANGE/LIST partitions", "%s PARTITION can only be use\
+    d on RANGE/LIST partitions"
+OB_ERR_DROP_LAST_PARTITION, -5306, ER_DROP_LAST_PARTITION, "HY000", "Cannot remove all partitions, use DROP TABLE instead"
+OB_ERR_SCHEDULER_THREAD_NOT_ENOUGH, -5307, -1, "HY000", "Scheduler thread number is not enough"
+OB_ERR_IGNORE_USER_HOST_NAME, -5308, -1, "HY000", "Ignore the host name"
+OB_IGNORE_SQL_IN_RESTORE, -5309, -1, "HY000", "Ignore sql in restore process"
+OB_ERR_TEMPORARY_TABLE_WITH_PARTITION, -5310, ER_PARTITION_NO_TEMPORARY, "HY000", "Cannot create temporary table with partitions"
+OB_ERR_INVALID_COLUMN_ID, -5311, -1, "HY000", "Invalid column id", "Invalid column id for %.*s"
+OB_SYNC_DDL_DUPLICATE, -5312, -1, "HY000", "Duplicated ddl id", "Duplicated ddl id '%.*s'"
+OB_SYNC_DDL_ERROR, -5313, -1, "HY000", "Failed to sync ddl", "Failed to sync ddl '%.*s'"
+OB_ERR_ROW_IS_REFERENCED, -5314, ER_ROW_IS_REFERENCED_2, "23000", "Cannot delete or update a parent row: a foreign key constraint fails", OER_CHILD_RECORD_FOUND, "integrity constraint violated - child record found"
+OB_ERR_NO_REFERENCED_ROW, -5315, ER_NO_REFERENCED_ROW_2, "23000", "Cannot add or update a child row: a foreign key constraint fails", OER_PARENT_KEY_NOT_FOUND, "integrity constraint violated - parent key not found"
+%d
+OB_ERR_CANNOT_ADD_FOREIGN, -5317, ER_CANNOT_ADD_FOREIGN, "HY000", "Cannot add foreign key constraint"
+OB_ERR_WRONG_FK_DEF, -5318, ER_WRONG_FK_DEF, "42000", "Incorrect foreign key definition: Key reference and table reference don't match"
+OB_ERR_INVALID_CHILD_COLUMN_LENGTH_FK, -5319, -1, "HY000", "Invalid child column length", "Child column \'%.*s\' data length cannot be less than parent column \'%.*s\' data length"
+OB_ERR_ALTER_COLUMN_FK, -5320, -1, "HY000", "Cannot alter foreign key column", "\'%.*s\': used in a foreign key constraint"
+OB_ERR_CONNECT_BY_REQUIRED, -5321, -1, "HY000", "CONNECT BY clause required in this query block"
+OB_ERR_INVALID_PSEUDO_COLUMN_PLACE, -5322, -1, "HY000", "Specified pseudocolumn, operator or function not allowed here"
+OB_ERR_NOCYCLE_REQUIRED, -5323, -1, "HY000", "NOCYCLE keyword is required with CONNECT_BY_ISCYCLE pseudocolumn"
+OB_ERR_CONNECT_BY_LOOP, -5324, -1, "HY000", "CONNECT BY loop in user data"
+OB_ERR_INVALID_SIBLINGS, -5325, -1, "HY000", "ORDER SIBLINGS BY clause not allowed here", OER_INVALID_SIBLINGS, "ORDER SIBLINGS BY clause not allowed here"
+OB_ERR_INVALID_SEPARATOR, -5326, -1, "HY000", "when using SYS_CONNECT_BY_PATH function, cannot have separator as part of column value"
+OB_ERR_INVALID_SYNONYM_NAME, -5327, -1, "HY000", "Database can not be specified in public synonym"
+OB_ERR_LOOP_OF_SYNONYM, -5328, -1, "HY000", "Looping chain of synonyms"
+OB_ERR_SYNONYM_SAME_AS_OBJECT, -5329, -1, "HY000", "Cannot create a synonym with same name as object"
+OB_ERR_SYNONYM_TRANSLATION_INVALID, -5330, -1, "HY000", "Synonym translation is no longer valid"
+OB_ERR_EXIST_OBJECT, -5331, -1, "HY000", "Name is already used by an existing object"
+OB_ERR_ILLEGAL_VALUE_FOR_TYPE, -5332, ER_ILLEGAL_VALUE_FOR_TYPE, "22007", "Illegal value found during parsing", "Illegal %s '%.*s' value found during parsing"
+OB_ER_TOO_LONG_SET_ENUM_VALUE, -5333, ER_TOO_LONG_SET_ENUM_VALUE, "HY000", "Too long enumeration/set value for column.", "Too long enumeration/set value for column %.*s."
+OB_ER_DUPLICATED_VALUE_IN_TYPE, -5334, ER_DUPLICATED_VALUE_IN_TYPE, "HY000", "Column has duplicated value", "Column '%.*s' has duplicated value '%.*s' in %s ", OER_UNIQUE_CONSTRAINT_VIOLATED, "unique constraint violated", "unique constraint violated, column '%.*s' with value '%.*s' in %s"
+OB_ER_TOO_BIG_ENUM, -5335, ER_TOO_BIG_ENUM, "HY000", "Too many enumeration values for column", "Too many enumeration values for column %.*s"
+OB_ERR_TOO_BIG_SET, -5336, ER_TOO_BIG_SET, "HY000", "Too many strings for column", "Too many strings for column %.*s and SET"
+OB_ERR_WRONG_ROWID, -5337, -1, "HY000", "rowid is wrong"
+OB_ERR_INVALID_WINDOW_FUNCTION_PLACE, -5338, -1, "HY000", "Window Function not allowed here"
+OB_ERR_PARSE_PARTITION_LIST, -5339, -1, "HY000", "Fail to parse list partition"
+OB_ERR_MULTIPLE_DEF_CONST_IN_LIST_PART, -5340, ER_MULTIPLE_DEF_CONST_IN_LIST_PART_ERROR, "HY000", "Multiple definition of same constant in list partitioning"
+OB_ERR_INVALID_TIMEZONE_REGION_ID, -5341, -1, "HY000", "timezone region ID is invalid", OER_INVALID_TIMEZONE_REGION_ID, "timezone region ID is invalid"
+OB_ERR_INVALID_HEX_NUMBER, -5342, -1, "HY000", "invalid hex number", OER_INVALID_HEX_NUMBER, "invalid hex number"
+OB_ERR_WRONG_FUNC_ARGUMENTS_TYPE, -5343, -1, "42000", "wrong number or types of arguments in function", "wrong number or types of arguments in call to '%.*s'", OER_WRONG_FUNC_ARGUMENTS_TYPE, "wrong number or types of arguments in function", "wrong number or types of arguments in call to '%.*s'"
+OB_ERR_MULTI_UPDATE_KEY_CONFLICT, -5344, ER_MULTI_UPDATE_KEY_CONFLICT, "HY000", "Primary key/partition key update is not allowed", "Primary key/partition key update is not allowed since the table is updated both as '%.*s' and '%.*s'"
+OB_ERR_INSUFFICIENT_PX_WORKER, -5345, -1, "HY000", "insufficient parallel query worker available", OER_INSUFFICIENT_PX_WORKER, "insufficient parallel query worker available"
+OB_ERR_FOR_UPDATE_EXPR_NOT_ALLOWED, -5346, -1, "HY000", "FOR UPDATE of this query expression is not allowed", OER_FOR_UPDATE_EXPR_NOT_ALLOWED, "FOR UPDATE of this query expression is not allowed"
+OB_ERR_WIN_FUNC_ARG_NOT_IN_PARTITION_BY, -5347, -1, "HY000", "argument should be a function of expressions in PARTITION BY", OER_WIN_FUNC_ARG_NOT_IN_PARTITION_BY, "argument should be a function of expressions in PARTITION BY"
+OB_ERR_TOO_LONG_STRING_IN_CONCAT, -5348, -1, "HY000", "result of string concatenation is too long", OER_TOO_LONG_STRING_IN_CONCAT, "result of string concatenation is too long"
+OB_ERR_UPD_CAUSE_PART_CHANGE, -5350, -1, "HY000", "updating partition key column would cause a partition change", OER_ERR_UPD_CAUSE_PART_CHANGE, "updating partition key column would cause a partition change"
+
+OB_ERR_SP_ALREADY_EXISTS, -5541, ER_SP_ALREADY_EXISTS, "42000", "procedure/function already exists", "%s %.*s already exists"
+OB_ERR_SP_DOES_NOT_EXIST, -5542, ER_SP_DOES_NOT_EXIST, "42000", "procedure/function does not exist", "%s %.*s.%.*s does not exist"
+OB_ERR_SP_UNDECLARED_VAR, -5543, ER_SP_UNDECLARED_VAR, "42000", "Undeclared variable", "Undeclared variable: %.*s"
+OB_ERR_SP_UNDECLARED_TYPE, -5544, ER_SP_UNDECLARED_VAR, "42000", "Undeclared type", "Undeclared type: %.*s"
+OB_ERR_SP_COND_MISMATCH, -5545, ER_SP_COND_MISMATCH, "42000", "Undefined CONDITION", "Undefined CONDITION: %.*s"
+OB_ERR_SP_LILABEL_MISMATCH, -5546, ER_SP_LILABEL_MISMATCH, "42000", "no matching label", "no matching label: %.*s"
+OB_ERR_SP_CURSOR_MISMATCH, -5547, ER_SP_CURSOR_MISMATCH, "42000", "Undefined CURSOR", "Undefined CURSOR: %.*s"
+OB_ERR_SP_DUP_PARAM, -5548, ER_SP_DUP_PARAM, "42000", "Duplicate parameter", "Duplicate parameter: %.*s"
+OB_ERR_SP_DUP_VAR, -5549, ER_SP_DUP_VAR, "42000", "Duplicate variable", "Duplicate variable: %.*s"
+OB_ERR_SP_DUP_TYPE, -5550, ER_SP_DUP_PARAM, "42000", "Duplicate type", "Duplicate type: %.*s"
+OB_ERR_SP_DUP_CONDITION, -5551, ER_SP_DUP_COND, "42000", "Duplicate condition", "Duplicate condition: %.*s"
+OB_ERR_SP_DUP_LABEL, -5552, ER_SP_DUP_PARAM, "42000", "Duplicate label", "Duplicate label: %.*s"
+OB_ERR_SP_DUP_CURSOR, -5553, ER_SP_DUP_CURS, "42000", "Duplicate cursor", "Duplicate cursor: %.*s"
+OB_ERR_SP_INVALID_FETCH_ARG, -5554, ER_SP_WRONG_NO_OF_FETCH_ARGS, "HY000", "Incorrect number of FETCH variables"
+OB_ERR_SP_WRONG_ARG_NUM, -5555, ER_SP_WRONG_NO_OF_ARGS, "42000", "Incorrect number of arguments", "Incorrect number of arguments for %s %s; expected %u, got %u"
+OB_ERR_SP_UNHANDLED_EXCEPTION, -5556, ER_SIGNAL_EXCEPTION, "HY000", "Unhandled exception has occurred in PL", "Unhandled user-defined exception condition"
+OB_ERR_SP_BAD_CONDITION_TYPE, -5557, ER_SIGNAL_BAD_CONDITION_TYPE, "HY000", "SIGNAL/RESIGNAL can only use a CONDITION defined with SQLSTATE"
+OB_ERR_PACKAGE_ALREADY_EXISTS, -5558, -1, "42000", "package already exists", "%s \'%.*s.%.*s\' already exists"
+OB_ERR_PACKAGE_DOSE_NOT_EXIST, -5559, -1, "42000", "package does not exist", "%s \'%.*s.%.*s\' does not exist"
+OB_EER_UNKNOWN_STMT_HANDLER, -5560, ER_UNKNOWN_STMT_HANDLER, "HY000", "Unknown prepared statement handle"
+OB_ERR_INVALID_WINDOW_FUNC_USE, -5561, -1, "HY000", "Invalid use of window function"
+%.*s
+OB_ERR_CONTRAINT_NOT_FOUND, -5563, -1, "HY000", "Constraint not found"
+OB_ERR_ALTER_TABLE_ALTER_DUPLICATED_INDEX, -5564, -1, "HY000", "Duplicate alter index operations", "Duplicate alter index operations on column \'%.*s\'"
+OB_EER_INVALID_ARGUMENT_FOR_LOGARITHM, -5565, ER_INVALID_ARGUMENT_FOR_LOGARITHM, "2201E", "Invalid argument for logarithm"
+OB_ERR_REORGANIZE_OUTSIDE_RANGE, -5566, ER_REORG_OUTSIDE_RANGE, "HY000", "Reorganize of range partitions cannot change total ranges except for last partition where it can extend the range"
+as set by the max_sp_recursion_depth variable
+OB_ER_UNSUPPORTED_PS, -5568, ER_UNSUPPORTED_PS, "HY000", "This command is not supported in the prepared statement protocol yet"
+OB_ER_STMT_NOT_ALLOWED_IN_SF_OR_TRG, -5569, ER_STMT_NOT_ALLOWED_IN_SF_OR_TRG, "0A000", "stmt is not allowed in stored function", "%s is not allowed in stored function"
+OB_ER_SP_NO_RECURSION, -5570, ER_SP_NO_RECURSION, "HY000", "Recursive stored functions are not allowed."
+OB_ER_SP_CASE_NOT_FOUND, -5571, ER_SP_CASE_NOT_FOUND, "20000", "Case not found for CASE statement"
+OB_ERR_INVALID_SPLIT_COUNT, -5572, -1, "HY000", "a partition may be split into exactly two new partitions"
+OB_ERR_INVALID_SPLIT_GRAMMAR, -5573, -1, "HY000", "this physical attribute may not be specified for a table partition"
+OB_ERR_MISS_VALUES, -5574, -1, "HY000", "missing VALUES keyword", OER_MISSING_VALUES, "missing VALUES keyword"
+OB_ERR_MISS_AT_VALUES, -5575, -1, "HY000", "missing AT or VALUES keyword"
+OB_ER_COMMIT_NOT_ALLOWED_IN_SF_OR_TRG, -5576, ER_COMMIT_NOT_ALLOWED_IN_SF_OR_TRG, "HY000", "Explicit or implicit commit is not allowed in stored function."
+OB_PC_GET_LOCATION_ERROR, -5577, -1, "HY000", "Plan cache get location failed"
+OB_PC_LOCK_CONFLICT, -5578, -1, "HY000", "Plan cache lock conflict"
+OB_ER_SP_NO_RETSET, -5579, ER_SP_NO_RETSET, "0A000", "Not allowed to return a result set in pl function"
+OB_ER_SP_NORETURNEND, -5580, ER_SP_NORETURNEND, "2F005", "FUNCTION ended without RETURN", "FUNCTION %s ended without RETURN"
+OB_ERR_SP_DUP_HANDLER, -5581, ER_SP_DUP_HANDLER, "42000", "Duplicate handler declared in the same block"
+OB_ER_SP_NO_RECURSIVE_CREATE, -5582, ER_SP_NO_RECURSIVE_CREATE, "2F003", "Can\'t create a routine from within another routine"
+OB_ER_SP_BADRETURN, -5583, ER_SP_BADRETURN, "42000", "RETURN is only allowed in a FUNCTION"
+OB_ER_SP_BAD_CURSOR_SELECT, -5584, ER_SP_BAD_CURSOR_SELECT, "42000", "Cursor SELECT must not have INTO"
+OB_ER_SP_BAD_SQLSTATE, -5585, ER_SP_BAD_SQLSTATE, "42000", "Bad SQLSTATE", "Bad SQLSTATE: \'%.*s\'"
+OB_ER_SP_VARCOND_AFTER_CURSHNDLR, -5586, ER_SP_VARCOND_AFTER_CURSHNDLR, "42000", "Variable or condition declaration after cursor or handler declaration"
+OB_ER_SP_CURSOR_AFTER_HANDLER, -5587, ER_SP_CURSOR_AFTER_HANDLER, "42000", "Cursor declaration after handler declaration"
+OB_ER_SP_WRONG_NAME, -5588, ER_SP_WRONG_NAME, "42000", "Incorrect routine name", "Incorrect routine name \'%.*s\'"
+OB_ER_SP_CURSOR_ALREADY_OPEN, -5589, ER_SP_CURSOR_ALREADY_OPEN, "24000", "Cursor is already open"
+OB_ER_SP_CURSOR_NOT_OPEN, -5590, ER_SP_CURSOR_NOT_OPEN, "24000", "Cursor is not open"
+OB_ER_SP_CANT_SET_AUTOCOMMIT, -5591, ER_SP_CANT_SET_AUTOCOMMIT, "HY000", "Not allowed to set autocommit from a stored function"
+OB_ER_SP_NOT_VAR_ARG, -5592, ER_SP_NOT_VAR_ARG, "42000", "OUT or INOUT argument for routine is not a variable", "OUT or INOUT argument %d for routine %.*s is not a variable"
+OB_ER_SP_LILABEL_MISMATCH, -5593, ER_SP_LILABEL_MISMATCH, "42000", "with no matching label", "%s with no matching label: %s"
+OB_ERR_TRUNCATE_ILLEGAL_FK, -5594, ER_TRUNCATE_ILLEGAL_FK, "42000", "Cannot truncate a table referenced in a foreign key constraint", "Cannot truncate a table referenced in a foreign key constraint %.*s"
+%.*s
+OB_ER_INVALID_USE_OF_NULL, -5596, ER_INVALID_USE_OF_NULL, "22004", "Invalid use of NULL value"
+OB_ERR_SPLIT_LIST_LESS_VALUE, -5597, -1, "HY000", "last resulting partition cannot contain bounds"
+OB_ERR_ADD_PARTITION_TO_DEFAULT_LIST, -5598, -1, "HY000", "cannot add partition when DEFAULT partition exists"
+OB_ERR_SPLIT_INTO_ONE_PARTITION, -5599, -1, "HY000", "cannot split partition into one partition, use rename instead"
+OB_ERR_NO_TENANT_PRIVILEGE, -5600, -1, "HY000", "can not create user %s in sys tenant, name %.*s"
+OB_ERR_INVALID_PERCENTAGE, -5601, -1, "HY000", "Percentage should between 1 and 99"
+OB_ERR_COLLECT_HISTOGRAM, -5602, -1, "HY000", "Should collect histogram after major freeze"
+OB_ER_TEMP_TABLE_IN_USE, -5603, -1, "0A000", "Attempt to create, alter or drop an index on temporary table already in use"
+OB_ERR_INVALID_NLS_PARAMETER_STRING, -5604, -1, "HY000", "invalid NLS parameter string used in SQL function", OER_INVALID_NLS_PARAMETER_STRING, "invalid NLS parameter string used in SQL function"
+OB_ERR_DATETIME_INTERVAL_PRECISION_OUT_OF_RANGE, -5605, -1, "HY000", "datetime/interval precision is out of range", OER_DATETIME_INTERVAL_PRECISION_OUT_OF_RANGE, "datetime/interval precision is out of range"
+OB_ERR_INVALID_NUMBER_FORMAT_MODEL, -5606, -1, "42000", "Invalid number format model", OER_INVALID_NUMBER_FORMAT_MODEL, "invalid number format model"
+OB_ERR_CMD_NOT_PROPERLY_ENDED, -5607, -1, "HY000", "SQL command not properly ended", OER_CMD_NOT_PROPERLY_ENDED, "SQL command not properly ended"
+OB_ERR_INVALID_NUMBER_FORMAT_MODEL, -5608, -1, "42000", "invalid number format model", OER_INVALID_NUMBER_FORMAT_MODEL, "invalid number format model"
+OB_WARN_NON_ASCII_SEPARATOR_NOT_IMPLEMENTED, -5609, ER_WRONG_FIELD_TERMINATORS, "HY000", "Non-ASCII separator arguments are not fully supported"
+OB_WARN_AMBIGUOUS_FIELD_TERM, -5610, ER_WRONG_FIELD_TERMINATORS, "HY000", "First character of the FIELDS TERMINATED string is ambiguous; please use non-optional and non-empty FIELDS ENCLOSED BY"
+OB_WARN_TOO_FEW_RECORDS, -5611, ER_WARN_TOO_FEW_RECORDS, "01000", "Row doesn't contain data for all columns", "Row %ld doesn't contain data for all columns"
+OB_WARN_TOO_MANY_RECORDS, -5612, ER_WARN_TOO_MANY_RECORDS, "01000", "Row was truncated; it contained more data than there were input columns", "Row %ld was truncated; it contained more data than there were input columns"
+OB_ERR_TOO_MANY_VALUES, -5613, -1, "HY000", "too many values", OER_TOO_MANY_VALUES, "too many values"
+OB_ERR_NOT_ENOUGH_VALUES, -5614, -1, "HY000", "not enough values", OER_NOT_ENOUGH_VALUES, "not enough values"
+OB_ERR_MORE_THAN_ONE_ROW, -5615, -1, "HY000", "single-row subquery returns more than one row", OER_MORE_THAN_ONE_ROW, "single-row subquery returns more than one row"
+OB_ERR_NOT_SUBQUERY, -5616, -1, "HY000", "UPDATE ... SET expression must be a subquery", OER_NOT_SUBQUERY, "UPDATE ... SET expression must be a subquery"
+OB_INAPPROPRIATE_INTO, -5617, -1, "HY000", "inappropriate INTO", OER_INAPPROPRIATE_INTO, "inappropriate INTO"
+OB_ERR_TABLE_IS_REFERENCED, -5618, ER_ROW_IS_REFERENCED, "23000", "Cannot delete or update a parent row: a foreign key constraint fails", OER_CHILD_RECORD_FOUND, "integrity constraint violated - child record found"
+OB_ERR_QUALIFIER_EXISTS_FOR_USING_COLUMN, -5619, -1, "HY000", "Column part of using clause can not have qualifier", OER_QUALIFIER_EXISTS_FOR_USING_COLUMN, "Column part of using clause can not have qualifier"
+OB_ERR_OUTER_JOIN_NESTED, -5620, -1, "HY000", "two tables cannot be outer-joined to each other", OER_OUTER_JOIN_NESTED, "two tables cannot be outer-joined to each other"
+OB_ERR_MULTI_OUTER_JOIN_TABLE, -5621, -1, "HY000", "a predicate may reference only one outer-joined table", OER_MULTI_OUTER_JOIN_TABLE, "a predicate may reference only one outer-joined table"
+OB_ERR_OUTER_JOIN_ON_CORRELATION_COLUMN, -5622, -1, "HY000", "an outer join cannot be specified on a correlation column", OER_OUTER_JOIN_ON_CORRELATION_COLUMN, "an outer join cannot be specified on a correlation column"
++
+OB_ERR_OUTER_JOIN_WITH_SUBQUERY, -5624, -1, "HY000", "a column may not be outer-joined to a subquery", OER_OUTER_JOIN_WITH_SUBQUERY, "a column may not be outer-joined to a subquery"
++
++
+OB_SCHEMA_EAGAIN, -5627, -1, "HY000", "Schema try again"
+OB_ERR_ZERO_LEN_COL, -5628, -1, "HY000", "zero-length columns are not allowed", OER_ZERO_LEN_COL, "zero-length columns are not allowed"
+OB_ERR_YEAR_CONFLICTS_WITH_JULIAN_DATE, -5629, -1, "HY000", "year conflicts with Julian date", OER_YEAR_CONFLICTS_WITH_JULIAN_DATE, "year conflicts with Julian date"
+OB_ERR_DAY_OF_YEAR_CONFLICTS_WITH_JULIAN_DATE, -5630, -1, "HY000", "day of year conflicts with Julian date", OER_DAY_OF_YEAR_CONFLICTS_WITH_JULIAN_DATE, "day of year conflicts with Julian date"
+OB_ERR_MONTH_CONFLICTS_WITH_JULIAN_DATE, -5631, -1, "HY000", "month conflicts with Julian date", OER_MONTH_CONFLICTS_WITH_JULIAN_DATE, "month conflicts with Julian date"
+OB_ERR_DAY_OF_MONTH_CONFLICTS_WITH_JULIAN_DATE, -5632, -1, "HY000", "day of month conflicts with Julian date", OER_DAY_OF_MONTH_CONFLICTS_WITH_JULIAN_DATE, "day of month conflicts with Julian date"
+OB_ERR_DAY_OF_WEEK_CONFLICTS_WITH_JULIAN_DATE, -5633, -1, "HY000", "day of week conflicts with Julian date", OER_DAY_OF_WEEK_CONFLICTS_WITH_JULIAN_DATE, "day of week conflicts with Julian date"
+OB_ERR_HOUR_CONFLICTS_WITH_SECONDS_IN_DAY, -5634, -1, "HY000", "hour conflicts with seconds in day", OER_HOUR_CONFLICTS_WITH_SECONDS_IN_DAY, "hour conflicts with seconds in day"
+OB_ERR_MINUTES_OF_HOUR_CONFLICTS_WITH_SECONDS_IN_DAY, -5635, -1, "HY000", "minutes of hour conflicts with seconds in day", OER_MINUTES_OF_HOUR_CONFLICTS_WITH_SECONDS_IN_DAY, "minutes of hour conflicts with seconds in day"
+OB_ERR_SECONDS_OF_MINUTE_CONFLICTS_WITH_SECONDS_IN_DAY, -5636, -1, "HY000", "seconds of minute conflicts with seconds in day", OER_SECONDS_OF_MINUTE_CONFLICTS_WITH_SECONDS_IN_DAY, "seconds of minute conflicts with seconds in day"
+OB_ERR_DATE_NOT_VALID_FOR_MONTH_SPECIFIED, -5637, -1, "HY000", "date not valid for month specified", OER_DATE_NOT_VALID_FOR_MONTH_SPECIFIED, "date not valid for month specified"
+OB_ERR_INPUT_VALUE_NOT_LONG_ENOUGH, -5638, -1, "HY000", "input value not long enough for date format", OER_INPUT_VALUE_NOT_LONG_ENOUGH, "input value not long enough for date format"
+full
+OB_ERR_INVALID_QUARTER_VALUE, -5640, -1, "HY000", "quarter must be between 1 and 4", OER_INVALID_QUARTER_VALUE, "quarter must be between 1 and 4"
+OB_ERR_INVALID_MONTH, -5641, -1, "HY000", "not a valid month", OER_INVALID_MONTH_NAME, "not a valid month"
+OB_ERR_INVALID_DAY_OF_THE_WEEK, -5642, -1, "HY000", "not a valid day of the week", OER_INVALID_DAY_OF_THE_WEEK, "not a valid day of the week"
+366 for leap year
+OB_ERR_INVALID_HOUR12_VALUE, -5644, -1, "HY000", "hour must be between 1 and 12", OER_INVALID_HOUR12_VALUE, "hour must be between 1 and 12"
+OB_ERR_INVALID_HOUR24_VALUE, -5645, -1, "HY000", "hour must be between 0 and 23", OER_INVALID_HOUR24_VALUE, "hour must be between 0 and 23"
+OB_ERR_INVALID_MINUTES_VALUE, -5646, -1, "HY000", "minutes must be between 0 and 59", OER_INVALID_MINUTES_VALUE, "minutes must be between 0 and 59"
+OB_ERR_INVALID_SECONDS_VALUE, -5647, -1, "HY000", "seconds must be between 0 and 59", OER_INVALID_SECONDS_VALUE, "seconds must be between 0 and 59"
+OB_ERR_INVALID_SECONDS_IN_DAY_VALUE, -5648, -1, "HY000", "seconds in day must be between 0 and 86399", OER_INVALID_SECONDS_IN_DAY_VALUE, "seconds in day must be between 0 and 86399"
+OB_ERR_INVALID_JULIAN_DATE_VALUE, -5649, -1, "HY000", "julian date must be between 1 and 5373484", OER_INVALID_JULIAN_DATE_VALUE, "julian date must be between 1 and 5373484"
+OB_ERR_AM_OR_PM_REQUIRED, -5650, -1, "HY000", "AM/A.M. or PM/P.M. required", OER_AM_OR_PM_REQUIRED, "AM/A.M. or PM/P.M. required"
+OB_ERR_BC_OR_AD_REQUIRED, -5651, -1, "HY000", "BC/B.C. or AD/A.D. required", OER_BC_OR_AD_REQUIRED, "BC/B.C. or AD/A.D. required"
+OB_ERR_FORMAT_CODE_APPEARS_TWICE, -5652, -1, "HY000", "format code appears twice", OER_FORMAT_CODE_APPEARS_TWICE, "format code appears twice"
+OB_ERR_DAY_OF_WEEK_SPECIFIED_MORE_THAN_ONCE, -5653, -1, "HY000", "day of week may only be specified once", OER_DAY_OF_WEEK_MAY_ONLY_BE_SPECIFIED_ONCE, "day of week may only be specified once"
+OB_ERR_SIGNED_YEAR_PRECLUDES_USE_OF_BC_AD, -5654, -1, "HY000", "signed year precludes use of BC/AD", OER_SIGNED_YEAR_PRECLUDES_USE_OF_BC_AD, "signed year precludes use of BC/AD"
+OB_ERR_JULIAN_DATE_PRECLUDES_USE_OF_DAY_OF_YEAR, -5655, -1, "HY000", "Julian date precludes use of day of year", OER_JULIAN_DATE_PRECLUDES_USE_OF_DAY_OF_YEAR, "Julian date precludes use of day of year"
+OB_ERR_YEAR_MAY_ONLY_BE_SPECIFIED_ONCE, -5656, -1, "HY000", "year may only be specified once", OER_YEAR_MAY_ONLY_BE_SPECIFIED_ONCE, "year may only be specified once"
+OB_ERR_HOUR_MAY_ONLY_BE_SPECIFIED_ONCE, -5657, -1, "HY000", "hour may only be specified once", OER_HOUR_MAY_ONLY_BE_SPECIFIED_ONCE, "hour may only be specified once"
+OB_ERR_AM_PM_CONFLICTS_WITH_USE_OF_AM_DOT_PM_DOT, -5658, -1, "HY000", "AM/PM conflicts with use of A.M./P.M.", OER_AM_PM_CONFLICTS_WITH_USE_OF_AM_DOT_PM_DOT, "AM/PM conflicts with use of A.M./P.M."
+OB_ERR_BC_AD_CONFLICT_WITH_USE_OF_BC_DOT_AD_DOT, -5659, -1, "HY000", "BC/AD conflicts with use of B.C./A.D.", OER_BC_AD_CONFLICT_WITH_USE_OF_BC_DOT_AD_DOT, "BC/AD conflicts with use of B.C./A.D."
+OB_ERR_MONTH_MAY_ONLY_BE_SPECIFIED_ONCE, -5660, -1, "HY000", "month may only be specified once", OER_MONTH_MAY_ONLY_BE_SPECIFIED_ONCE, "month may only be specified once"
+OB_ERR_DAY_OF_WEEK_MAY_ONLY_BE_SPECIFIED_ONCE, -5661, -1, "HY000", "day of week may only be specified once", OER_DAY_OF_WEEK_MAY_ONLY_BE_SPECIFIED_ONCE, "day of week may only be specified once"
+OB_ERR_FORMAT_CODE_CANNOT_APPEAR, -5662, -1, "HY000", "format code cannot appear in date input format", OER_FORMAT_CODE_CANNOT_APPEAR, "format code cannot appear in date input format"
+OB_ERR_NON_NUMERIC_CHARACTER_VALUE, -5663, -1, "HY000", "a non-numeric character was found where a numeric was expected", OER_NON_NUMERIC_CHARACTER_VALUE, "a non-numeric character was found where a numeric was expected"
+OB_INVALID_MERIDIAN_INDICATOR_USE, -5664, -1, "HY000", "'HH24' precludes use of meridian indicator", OER_INVALID_MERIDIAN_INDICATOR_USE, "'HH24' precludes use of meridian indicator"
+OB_ERR_INVALID_CHAR_FOLLOWING_ESCAPE_CHAR, -5665, -1, "HY000", "missing or illegal character following the escape character", OER_INVALID_CHAR_FOLLOWING_ESCAPE_CHAR, "missing or illegal character following the escape character"
+OB_ERR_INVALID_ESCAPE_CHAR_LENGTH, -5666, -1, "HY000", "escape character must be character string of length 1", OER_INVALID_ESCAPE_CHAR_LENGTH, "escape character must be character string of length 1"
+OB_ERR_DAY_OF_MONTH_RANGE, -5667, -1, "HY000", "day of month must be between 1 and last day of month", OER_DAY_OF_MONTH_SHOULD_BETWEEN_ONE_AND_LAST_DAY_OF_MONTH, "day of month must be between 1 and last day of month"
+OB_ERR_NOT_SELECTED_EXPR, -5668, -1, "HY000", "not a SELECTed expression", OER_NOT_SELECTED_EXPR, "not a SELECTed expression"
+full
+OB_ERR_UK_PK_DUPLICATE, -5671, -1, "HY000", "such unique or primary key already exists in the table", OER_UK_PK_DUPLICATE, "such unique or primary key already exists in the table"
+OB_ERR_COLUMN_LIST_ALREADY_INDEXED, -5672, -1, "HY000", "such column list already indexed", OER_COLUMN_LIST_ALREADY_INDEXED, "such column list already indexed"
+OB_ERR_BUSHY_TREE_NOT_SUPPORTED, -5673, -1, "HY000", "PX does not support processing a bushy tree"
+OB_ERR_ARGUMENT_OUT_OF_RANGE, -5674, -1, "HY000", "argument is out of range", "argument '%ld' is out of range", OER_ARGUMENT_OUT_OF_RANGE, "argument is out of range", "argument '%ld' is out of range"
+OB_ERR_ORDER_BY_ITEM_NOT_IN_SELECT_LIST, -5675, -1, "HY000", "ORDER BY item must be the number of a SELECT-list expression", OER_ORDER_BY_ITEM_NOT_IN_SELECT_LIST, "ORDER BY item must be the number of a SELECT-list expression"
+OB_ERR_INTERVAL_INVALID, -5676, -1, "HY000", "the interval is invalid", OER_INTERVAL_INVALID, "the interval is invalid"
+OB_ERR_NUMERIC_OR_VALUE_ERROR, -5677, -1, "HY000", "PL/SQL: numeric or value error", "PL/SQL: numeric or value error: %.*s", OER_NUMERIC_OR_VALUE_ERROR, "PL/SQL: numeric or value error", "PL/SQL: numeric or value error: %.*s"
+OB_ERR_CONSTRAINT_NAME_DUPLICATE, -5678, -1, "HY000", "name already used by an existing constraint", OER_CONSTRAINT_NAME_DUPLICATE, "name already used by an existing constraint"
+OB_ERR_ONLY_HAVE_INVISIBLE_COL_IN_TABLE, -5679, -1, "HY000", "table must have at least one column that is not invisible", OER_ONLY_HAVE_INVISIBLE_COL_IN_TABLE, "table must have at least one column that is not invisible"
+OB_ERR_INVISIBLE_COL_ON_UNSUPPORTED_TABLE_TYPE, -5680, -1, "HY000", "Invisible column is not supported on this type of table.", OER_INVISIBLE_COL_ON_UNSUPPORTED_TABLE_TYPE, "Invisible column is not supported on this type of table."
+OB_ERR_MODIFY_COL_VISIBILITY_COMBINED_WITH_OTHER_OPTION, -5681, -1, "HY000", "Column visibility modifications cannot be combined with any other modified column DDL option.", OER_MODIFY_COL_VISIBILITY_COMBINED_WITH_OTHER_OPTION, "Column visibility modifications cannot be combined with any other modified column DDL option."
+OB_ERR_MODIFY_COL_VISIBILITY_BY_SYS_USER, -5682, -1, "HY000", "The visibility of a column from a table owned by a SYS user cannot be changed.", OER_MODIFY_COL_VISIBILITY_BY_SYS_USER, "The visibility of a column from a table owned by a SYS user cannot be changed."
+OB_ERR_TOO_MANY_ARGS_FOR_FUN, -5683, -1, "HY000", "too many arguments for function", OER_TOO_MANY_ARGS_FOR_FUN, "too many arguments for function"
+
+
+
+
+
+OB_TRANSACTION_SET_VIOLATION, -6001, -1, "25000", "Transaction set changed during the execution"
+OB_TRANS_ROLLBACKED, -6002, -1, "40000", "Transaction rollbacked", "transaction is rolled back", OER_TRANSACTION_ROLLED_BACK, "transaction rolled back", "transaction rolled back"
+OB_ERR_EXCLUSIVE_LOCK_CONFLICT, -6003, ER_LOCK_WAIT_TIMEOUT, "HY000", "Lock wait timeout exceeded; try restarting transaction", OER_RESOURCE_BUSY_AND_ACQUIRE_WITH_WAIT, "resource busy; acquire with WAIT timeout expired"
+OB_ERR_SHARED_LOCK_CONFLICT, -6004, -1, "HY000", "Shared lock conflict", OER_TIMEOUT_BY_DISTRIBUTED_TRANS_LOCK_WAITING, "timeout: distributed transaction waiting for lock"
+OB_TRY_LOCK_ROW_CONFLICT, -6005, -1, "HY000", "Try lock row conflict"
+OB_ERR_EXCLUSIVE_LOCK_CONFLICT_NOWAIT, -6006, ER_LOCK_WAIT_TIMEOUT, "HY000", "Lock wait timeout exceeded; try restarting transaction", OER_RESOURCE_BUSY_AND_ACQUIRE_WITH_NOWAIT, "resource busy and acquire with NOWAIT specified or timeout expired"
+OB_CLOCK_OUT_OF_ORDER, -6201, -1, "25000", "Clock out of order"
+OB_MASK_SET_NO_NODE, -6203, -1, "25000", "Mask set has no node"
+OB_TRANS_HAS_DECIDED, -6204, -1, "HY000", "Transaction has been decided"
+OB_TRANS_INVALID_STATE, -6205, -1, "HY000", "Transaction state invalid"
+OB_TRANS_STATE_NOT_CHANGE, -6206, -1, "HY000", "Transaction state not changed"
+OB_TRANS_PROTOCOL_ERROR, -6207, -1, "HY000", "Transaction protocol error"
+OB_TRANS_INVALID_MESSAGE, -6208, -1, "HY000", "Transaction message invalid"
+OB_TRANS_INVALID_MESSAGE_TYPE, -6209, -1, "HY000", "Transaction message type invalid"
+OB_TRANS_TIMEOUT, -6210, 4012, "25000", "Transaction is timeout"
+OB_TRANS_KILLED, -6211, 6002, "25000", "Transaction is killed", OER_TRANSACTION_ROLLED_BACK, "Transaction is killed"
+OB_TRANS_STMT_TIMEOUT, -6212, 4012, "25000", "Statement is timeout"
+OB_TRANS_CTX_NOT_EXIST, -6213, 6002, "HY000", "Transaction context does not exist", OER_TRANSACTION_DOES_NOT_EXIST, "transaction does not exist"
+OB_PARTITION_IS_FROZEN, -6214, 6002, "25000", "Partition is frozen", OER_TRANSACTION_ROLLED_BACK, "Partition is frozen"
+OB_PARTITION_IS_NOT_FROZEN, -6215, -1, "HY000", "Partition is not frozen"
+OB_TRANS_INVALID_LOG_TYPE, -6219, -1, "HY000", "Transaction invalid log type"
+OB_TRANS_SQL_SEQUENCE_ILLEGAL, -6220, -1, "HY000", "SQL sequence illegal"
+OB_TRANS_CANNOT_BE_KILLED, -6221, -1, "HY000", "Transaction context cannot be killed"
+OB_TRANS_STATE_UNKNOWN, -6222, -1, "HY000", "Transaction state unknown", OER_TRANSACTION_STATUS_UNKNOWN, "transaction status unknown"
+OB_TRANS_IS_EXITING, -6223, 6002, "25000", "Transaction exiting", OER_TRANSACTION_EXISTS, "Transaction exists"
+OB_TRANS_NEED_ROLLBACK, -6224, 6002, "25000", "transaction need rollback", OER_TRANSACTION_MUST_ROLL_BACK, "transaction must roll back"
+OB_TRANS_UNKNOWN, -6225, 4012, "25000", "Transaction result is unknown"
+OB_ERR_READ_ONLY_TRANSACTION, -6226, ER_CANT_EXECUTE_IN_READ_ONLY_TRANSACTION, "25006", "Cannot execute statement in a READ ONLY transaction"
+OB_PARTITION_IS_NOT_STOPPED, -6227, -1, "HY000", "Partition is not stopped"
+OB_PARTITION_IS_STOPPED, -6228, -1, "HY000", "Partition has been stopped"
+OB_PARTITION_IS_BLOCKED, -6229, -1, "HY000", "Partition has been blocked"
+OB_TRANS_RPC_TIMEOUT, -6230, 4012, "25000", "transaction rpc timeout"
+OB_REPLICA_NOT_READABLE, -6231, -1, "HY000", "replica is not readable"
+OB_PARTITION_IS_SPLITTING, -6232, -1, "HY000", "Partition is splitting"
+OB_TRANS_COMMITED, -6233, -1, "HY000", "Transaction has been commited"
+OB_TRANS_CTX_COUNT_REACH_LIMIT, -6234, 6002, "25000", "transaction context count reach limit"
+
+
+OB_LOG_ID_NOT_FOUND, -6301, -1, "HY000", "log id not found"
+OB_LSR_THREAD_STOPPED, -6302, -1, "HY000", "log scan runnable thread stop"
+OB_NO_LOG, -6303, -1, "HY000", "no log ever scanned"
+OB_LOG_ID_RANGE_ERROR, -6304, -1, "HY000", "log id range error"
+OB_LOG_ITER_ENOUGH, -6305, -1, "HY000", "iter scans enough files"
+OB_CLOG_INVALID_ACK, -6306, -1, "HY000", "invalid ack msg"
+OB_CLOG_CACHE_INVALID, -6307, -1, "HY000", "clog cache invalid"
+OB_EXT_HANDLE_UNFINISH, -6308, -1, "HY000", "external executor handle do not finish"
+OB_CURSOR_NOT_EXIST, -6309, -1, "HY000", "cursor not exist"
+OB_STREAM_NOT_EXIST, -6310, -1, "HY000", "stream not exist"
+OB_STREAM_BUSY, -6311, -1, "HY000", "stream busy"
+OB_FILE_RECYCLED, -6312, -1, "HY000", "file recycled"
+OB_REPLAY_EAGAIN_TOO_MUCH_TIME, -6313, -1, "HY000", "replay eagain cost too much time"
+OB_MEMBER_CHANGE_FAILED, -6314, -1, "HY000", "member change log sync failed"
+OB_NO_NEED_BATCH_CTX, -6315, -1, "HY000", "no need batch ctx"
+OB_TOO_LARGE_LOG_ID, -6316, -1, "HY000", "too large log id"
+OB_ALLOC_LOG_ID_NEED_RETRY, -6317, -1, "HY000", "alloc log id need retry"
+OB_TRANS_ONE_PC_NOT_ALLOWED, -6318, -1, "HY000", "transaction one pc not allowed"
+OB_LOG_NEED_REBUILD, -6319, -1, "HY000", "need rebuild"
+OB_TOO_MANY_LOG_TASK, -6320, -1, "HY000", "too many log tasks"
+OB_INVALID_BATCH_SIZE, -6321, -1, "HY000", "ob invalid batch size"
+OB_CLOG_SLIDE_TIMEOUT, -6322, -1, "HY000", "ob clog slide timeout"
+
+
+
+
+OB_ELECTION_WARN_LOGBUF_FULL, -7000, -1, "HY000", "The log buffer is full"
+OB_ELECTION_WARN_LOGBUF_EMPTY, -7001, -1, "HY000", "The log buffer is empty"
+OB_ELECTION_WARN_NOT_RUNNING, -7002, -1, "HY000", "The object is not running"
+OB_ELECTION_WARN_IS_RUNNING, -7003, -1, "HY000", "The object is running"
+OB_ELECTION_WARN_NOT_REACH_MAJORITY, -7004, -1, "HY000", "Election does not reach majority"
+OB_ELECTION_WARN_INVALID_SERVER, -7005, -1, "HY000", "The server is not valid"
+OB_ELECTION_WARN_INVALID_LEADER, -7006, -1, "HY000", "The leader is not valid"
+OB_ELECTION_WARN_LEADER_LEASE_EXPIRED, -7007, -1, "HY000", "The leader lease is expired"
+OB_ELECTION_WARN_INVALID_MESSAGE, -7010, -1, "HY000", "The message is not valid"
+OB_ELECTION_WARN_MESSAGE_NOT_INTIME, -7011, -1, "HY000", "The message is not intime"
+OB_ELECTION_WARN_NOT_CANDIDATE, -7012, -1, "HY000", "The server is not candidate"
+OB_ELECTION_WARN_NOT_CANDIDATE_OR_VOTER, -7013, -1, "HY000", "The server is not candidate or voter"
+OB_ELECTION_WARN_PROTOCOL_ERROR, -7014, -1, "HY000", "Election protocol error"
+OB_ELECTION_WARN_RUNTIME_OUT_OF_RANGE, -7015, -1, "HY000", "The task run time out of range"
+OB_ELECTION_WARN_LAST_OPERATION_NOT_DONE, -7021, -1, "HY000", "Last operation has not done"
+OB_ELECTION_WARN_CURRENT_SERVER_NOT_LEADER, -7022, -1, "HY000", "Current server is not leader"
+OB_ELECTION_WARN_NO_PREPARE_MESSAGE, -7024, -1, "HY000", "There is not prepare message"
+OB_ELECTION_ERROR_MULTI_PREPARE_MESSAGE, -7025, -1, "HY000", "There is more than one prepare message"
+OB_ELECTION_NOT_EXIST, -7026, -1, "HY000", "Election does not exist"
+OB_ELECTION_MGR_IS_RUNNING, -7027, -1, "HY000", "Election manager is running"
+OB_ELECTION_WARN_NO_MAJORITY_PREPARE_MESSAGE, -7029, -1, "HY000", "Election msg pool not have majority prepare message"
+OB_ELECTION_ASYNC_LOG_WARN_INIT, -7030, -1, "HY000", "Election async log init error"
+OB_ELECTION_WAIT_LEADER_MESSAGE, -7031, -1, "HY000", "Election waiting leader message"
+OB_ELECTION_GROUP_NOT_EXIST, -7032, -1, "HY000", "Election group not exist"
+OB_UNEXPECT_EG_VERSION, -7033, -1, "HY000", "unexpected eg_version"
+OB_ELECTION_GROUP_MGR_IS_RUNNING, -7034, -1, "HY000", "election_group_mgr is running"
+OB_ELECTION_MGR_NOT_RUNNING, -7035, -1, "HY000", "Election manager is not running"
+
+
+
+
+OB_TRANSFER_TASK_COMPLETED, -7100, -1, "HY000", "transfer task completed"
+OB_TOO_MANY_TRANSFER_TASK, -7101, -1, "HY000", "too many transfer tasks"
+OB_TRANSFER_TASK_EXIST, -7102, -1, "HY000", "transfer task exist"
+OB_TRANSFER_TASK_NOT_EXIST, -7103, -1, "HY000", "transfer task not exist"
+OB_NOT_ALLOW_TO_REMOVE, -7104, -1, "HY000", "not allow to remove"
+OB_RG_NOT_MATCH, -7105, -1, "HY000", "replication group not match"
+OB_TRANSFER_TASK_ABORTED, -7106, -1, "HY000", "transfer task aborted"
+OB_TRANSFER_INVALID_MESSAGE, -7107, -1, "HY000", "transfer invalid message"
+OB_TRANSFER_CTX_TS_NOT_MATCH, -7108, -1, "HY000", "transfer ctx_ts not match"
+
+
+
+
+OB_SERVER_IS_INIT, -8001, -1, "08004", "Server is initializing"
+OB_SERVER_IS_STOPPING, -8002, -1, "08004", "Server is stopping"
+OB_PACKET_CHECKSUM_ERROR, -8003, -1, "08004", "Packet checksum error"
+OB_PACKET_CLUSTER_ID_NOT_MATCH, -8004, -1, "08004", "Packet cluster_id not match"
+
+OB_URI_ERROR, -9001, -1, "HY000", "URI error"
+OB_FINAL_MD5_ERROR, -9002, -1, "HY000", "OSS file MD5 error"
+OB_OSS_ERROR, -9003, -1, "HY000", "OSS error"
+OB_INIT_MD5_ERROR, -9004, -1, "HY000", "Init MD5 fail"
+OB_OUT_OF_ELEMENT, -9005, -1, "HY000", "Out of element"
+OB_UPDATE_MD5_ERROR, -9006, -1, "HY000", "Update MD5 fail"
+OB_FILE_LENGTH_INVALID, -9007, -1, "HY000", "Invalid OSS file length"
+OB_NOT_READ_ALL_DATA, -9008, -1, "HY000", "Read all data fail"
+OB_BUILD_MD5_ERROR, -9009, -1, "HY000", "Build MD5 fail"
+OB_MD5_NOT_MATCH, -9010, -1, "HY000", "OSS file MD5 not match"
+OB_OSS_FILE_NOT_EXIST, -9011, -1, "HY000", "Can not find oss file", "Can not find oss file %.*s"
+OB_OSS_DATA_VERSION_NOT_MATCHED, -9012, -1, "HY000", "Can not get data version from timestamp"
+OB_OSS_WRITE_ERROR, -9013, -1, "HY000", "Write OSS file error"
+OB_RESTORE_IN_PROGRESS, -9014, -1, "HY000", "Another restore is in progress"
+OB_AGENT_INITING_BACKUP_COUNT_ERROR, -9015, -1, "HY000", "agent initing backup count error"
+OB_CLUSTER_NAME_NOT_EQUAL, -9016, -1, "HY000", "ob cluster name not equal"
+OB_RS_LIST_INVAILD, -9017, -1, "HY000", "rs list invalid"
+OB_AGENT_HAS_FAILED_TASK, -9018, -1, "HY000", "agent has failed task"
+OB_RESTORE_PARTITION_IS_COMPELETE, -9019, -1, "HY000", "restore partition is compelete"
+OB_RESTORE_PARTITION_TWICE, -9020, -1, "HY000", "restore partition twice"
+
+
+CTE, with clause
+
+
+OB_ERR_CTE_ILLEGAL_QUERY_NAME, -32031, -1, "HY000", "illegal reference of a query name in WITH clause", OER_CTE_ILLEGAL_QUERY_NAME, "illegal reference of a query name in WITH clause"
+OB_ERR_CTE_UNSUPPORTED_COLUMN_ALIASING, -32033, -1, "HY000", "unsupported column aliasing", OER_CTE_UNSUPPORTED_COLUMN_ALIASING, "unsupported column aliasing"
+OB_ERR_UNSUPPORTED_USE_OF_CTE, -32034, -1, "HY000", "unsupported use of WITH clause", OER_UNSUPPORTED_USE_OF_CTE, "unsupported use of WITH clause"
+OB_ERR_CTE_COLUMN_NUMBER_NOT_MATCH, -32038, -1, "HY000", "number of WITH clause column names does not match number of elements in select list", OER_CTE_COLUMN_NUMBER_NOT_MATCH, "number of WITH clause column names does not match number of elements in select list"
+OB_ERR_NEED_COLUMN_ALIAS_LIST_IN_RECURSIVE_CTE, -32039, -1, "HY000", "recursive WITH clause must have column alias list", OER_NEED_COLUMN_ALIAS_LIST_IN_RECURSIVE_CTE, "recursive WITH clause must have column alias list"
+OB_ERR_NEED_UNION_ALL_IN_RECURSIVE_CTE, -32040, -1, "HY000", "recursive WITH clause must use a UNION ALL operation", OER_NEED_UNION_ALL_IN_RECURSIVE_CTE, "recursive WITH clause must use a UNION ALL operation"
+OB_ERR_NEED_ONLY_TWO_BRANCH_IN_RECURSIVE_CTE, -32041, -1, "HY000", "UNION ALL operation in recursive WITH clause must have only two branches", OER_NEED_ONLY_TWO_BRANCH_RECURSIVE_CTE, "UNION ALL operation in recursive WITH clause must have only two branches"
+OB_ERR_NEED_REFERENCE_ITSELF_DIRECTLY_IN_RECURSIVE_CTE, -32042, -1, "HY000", "recursive WITH clause must reference itself directly in one of the UNION ALL branches", OER_REFERENCE_ITSELF_DIRECTLY_IN_RECURSIVE_CTE, "recursive WITH clause must reference itself directly in one of the UNION ALL branches"
+OB_ERR_NEED_INIT_BRANCH_IN_RECURSIVE_CTE, -32043, -1, "HY000", "recursive WITH clause needs an initialization branch", OER_NEED_INIT_BRANCH_IN_RECURSIVE_CTE, "recursive WITH clause needs an initialization branch"
+OB_ERR_CYCLE_FOUND_IN_RECURSIVE_CTE, -32044, -1, "HY000", "cycle detected while executing recursive WITH query", OER_CYCLE_FOUND_IN_RECURSIVE_CTE, "cycle detected while executing recursive WITH query"
+OB_ERR_CTE_REACH_MAX_LEVEL_RECURSION, -32045, -1, "HY000", "maximum level of recursion reached while executing recursive WITH query", OER_CTE_REACH_MAX_LEVEL_RECURSION, "maximum level of recursion reached while executing recursive WITH query"
+OB_ERR_CTE_ILLEGAL_SEARCH_PSEUDO_NAME, -32046, -1, "HY000", "sequence column name for SEARCH clause must not be part of the column alias list", OER_CTE_ILLEGAL_SEARCH_PSEUDO_NAME, "sequence column name for SEARCH clause must not be part of the column alias list"
+OB_ERR_CTE_ILLEGAL_CYCLE_NON_CYCLE_VALUE, -32047, -1, "HY000", "cycle mark value and non-cycle mark value must be one byte character string values", OER_CTE_ILLEGAL_CYCLE_NON_CYCLE_VALUE, "cycle mark value and non-cycle mark value must be one byte character string values"
+OB_ERR_CTE_ILLEGAL_CYCLE_PSEUDO_NAME, -32048, -1, "HY000", "cycle mark column name for CYCLE clause must not be part of the column alias list", OER_CTE_ILLEGAL_CYCLE_PSEUDO_NAME, "cycle mark column name for CYCLE clause must not be part of the column alias list"
+OB_ERR_CTE_COLUMN_ALIAS_DUPLICATE, -32049, -1, "HY000", "duplicate name found in column alias list for WITH clause", OER_CTE_COLUMN_ALIAS_DUPLICATE, "duplicate name found in column alias list for WITH clause"
+OB_ERR_CTE_ILLEGAL_SEARCH_CYCLE_CLAUSE, -32480, -1, "HY000", "SEARCH and CYCLE clauses can only be specified for recursive WITH clause elements", OER_CTE_ILLEGAL_SEARCH_CYCLE_CLAUSE, "SEARCH and CYCLE clauses can only be specified for recursive WITH clause elements"
+OB_ERR_CTE_DUPLICATE_CYCLE_NON_CYCLE_VALUE, -32481, -1, "HY000", "cycle value for CYCLE clause must be different from the non-cycle value", OER_CTE_DUPLICATE_CYCLE_NON_CYCLE_VALUE, "cycle value for CYCLE clause must be different from the non-cycle value"
+OB_ERR_CTE_DUPLICATE_SEQ_NAME_CYCLE_COLUMN, -32482, -1, "HY000", "sequence column for SEARCH clause must be different from the cycle mark column for CYCLE clause", OER_CTE_DUPLOCATE_SEQ_NAME_CYCLE_COLUMN, "sequence column for SEARCH clause must be different from the cycle mark column for CYCLE clause"
+OB_ERR_CTE_DUPLICATE_NAME_IN_SEARCH_CLAUSE, -32483, -1, "HY000", "duplicate name found in sort specification list for SEARCH clause of WITH clause", OER_CTE_DUPLICATE_NAME_IN_SEARCH_CLAUSE, "duplicate name found in sort specification list for SEARCH clause of WITH clause"
+OB_ERR_CTE_DUPLICATE_NAME_IN_CYCLE_CLAUSE, -32484, -1, "HY000", "duplicate name found in cycle column list for CYCLE clause of WITH clause", OER_CTE_DUPLICATE_NAME_IN_CYCLE_CLAUSE, "duplicate name found in cycle column list for CYCLE clause of WITH clause"
+OB_ERR_CTE_ILLEGAL_COLUMN_IN_CYCLE_CLAUSE, -32485, -1, "HY000", "element in cycle column list of CYCLE clause must appear in the column alias list of the WITH clause element", OER_CTE_ILLEGAL_COLUMN_IN_CYCLE_CLAUSE, "element in cycle column list of CYCLE clause must appear in the column alias list of the WITH clause element"
+OB_ERR_CTE_ILLEGAL_RECURSIVE_BRANCH, -32486, -1, "HY000", "unsupported operation in recursive branch of recursive WITH clause", OER_CTE_ILLEGAL_RECURSIVE_BRANCH, "unsupported operation in recursive branch of recursive WITH clause"
+OB_ERR_ILLEGAL_JOIN_IN_RECURSIVE_CTE, -32487, -1, "HY000", "unsupported join in recursive WITH query", OER_ILLEGAL_JOIN_IN_RECURSIVE_CTE, "unsupported join in recursive WITH query"
+OB_ERR_CTE_NEED_COLUMN_ALIAS_LIST, -32488, -1, "HY000", "WITH clause element did not have a column alias list", OER_CTE_NEED_COLUMN_ALIAS_LIST, "WITH clause element did not have a column alias list"
+OB_ERR_CTE_ILLEGAL_COLUMN_IN_SERACH_CALUSE, -32489, -1, "HY000", "element in sort specification list of SEARCH clause did not appear in the column alias list of the WITH clause element", OER_CTE_ILLEGAL_COLUMN_IN_SERACH_CALUSE, "element in sort specification list of SEARCH clause did not appear in the column alias list of the WITH clause element"
+OB_ERR_CTE_RECURSIVE_QUERY_NAME_REFERENCED_MORE_THAN_ONCE, -32490, -1, "HY000", "recursive query name referenced more than once in recursive branch of recursive WITH clause element", OER_CTE_RECURSIVE_QUERY_NAME_REFERENCED_MORE_THAN_ONCE, "recursive query name referenced more than once in recursive branch of recursive WITH clause element"
+
+
+connect by
+
+OB_ERR_CBY_PSEUDO_COLUMN_NOT_ALLOWED, -976, -1, "HY000", "Specified pseudo column or operator not allowed here", OER_CBY_PSEUDO_COLUMN_NOT_ALLOWED, "Specified pseudo column or operator not allowed here"
+OB_ERR_CBY_LOOP, -1436, -1, "HY000", "CONNECT BY loop in user data", OER_CBY_LOOP, "CONNECT BY loop in user data"
+OB_ERR_CBY_JOIN_NOT_ALLOWED, -1437, -1, "HY000", "cannot have join with CONNECT BY", OER_CBY_JOIN_NOT_ALLOWED, "cannot have join with CONNECT BY"
+OB_ERR_CBY_CONNECT_BY_REQUIRED, -1788, -1, "HY000", "CONNECT BY clause required in this query block", OER_CBY_CONNECT_BY_REQUIRED, "CONNECT BY clause required in this query block"
+OB_ERR_CBY_CONNECT_BY_PATH_NOT_ALLOWED, -30002, -1, "HY000", "SYS_CONNECT_BY_PATH function is not allowed here", OER_CBY_CONNECT_BY_PATH_NOT_ALLOWED, "SYS_CONNECT_BY_PATH function is not allowed here"
+OB_ERR_CBY_CONNECT_BY_PATH_ILLEGAL_PARAM, -30003, -1, "HY000", "illegal parameter in SYS_CONNECT_BY_PATH function", OER_CBY_CONNECT_BY_PATH_ILLEGAL_PARAM, "illegal parameter in SYS_CONNECT_BY_PATH function"
+OB_ERR_CBY_CONNECT_BY_PATH_INVALID_SEPARATOR, -30004, -1, "HY000", "A column value contained the string that the SYS_CONNECT_BY_PATH function was to use to separate column values", OER_CBY_CONNECT_BY_PATH_INVALID_SEPARATOR, "A column value contained the string that the SYS_CONNECT_BY_PATH function was to use to separate column values."
+OB_ERR_CBY_CONNECT_BY_ROOT_ILLEGAL_USED, -30007, -1, "HY000", "CONNECT BY ROOT operator is not supported in the START WITH or in the CONNECT BY condition", OER_CBY_CONNECT_BY_ROOT_ILLEGAL_USED, "CONNECT BY ROOT operator is not supported in the START WITH or in the CONNECT BY condition"
+OB_ERR_CBY_OREDER_SIBLINGS_BY_NOT_ALLOWED, -30929, -1, "HY000", "ORDER SIBLINGS BY clause not allowed here", OER_CBY_OREDER_SIBLINGS_BY_NOT_ALLOWED, "ORDER SIBLINGS BY clause not allowed here"
+OB_ERR_CBY_NOCYCLE_REQUIRED, -30930, -1, "HY000", "NOCYCLE keyword is required with CONNECT_BY_ISCYCLE pseudo column", OER_CBY_NOCYCLE_REQUIRED, "NOCYCLE keyword is required with CONNECT_BY_ISCYCLE pseudo column"
+
+
+
+ OB_MAX_ERROR_CODE                      = 65535;
+ OB_SUCCESS                             = 0;
+ OB_ERROR                               ,4000;
+ OB_OBJ_TYPE_ERROR                      ,4001;
+ OB_INVALID_ARGUMENT                    ,4002;
+ OB_ARRAY_OUT_OF_RANGE                  ,4003;
+ OB_SERVER_LISTEN_ERROR                 ,4004;
+ OB_INIT_TWICE                          ,4005;
+ OB_NOT_INIT                            ,4006;
+ OB_NOT_SUPPORTED                       ,4007;
+ OB_ITER_END                            ,4008;
+ OB_IO_ERROR                            ,4009;
+ OB_ERROR_FUNC_VERSION                  ,4010;
+ OB_TIMEOUT                             ,4012;
+ OB_ALLOCATE_MEMORY_FAILED              ,4013;
+ OB_INNER_STAT_ERROR                    ,4014;
+ OB_ERR_SYS                             ,4015;
+ OB_ERR_UNEXPECTED                      ,4016;
+ OB_ENTRY_EXIST                         ,4017;
+ OB_ENTRY_NOT_EXIST                     ,4018;
+ OB_SIZE_OVERFLOW                       ,4019;
+ OB_REF_NUM_NOT_ZERO                    ,4020;
+ OB_CONFLICT_VALUE                      ,4021;
+ OB_ITEM_NOT_SETTED                     ,4022;
+ OB_EAGAIN                              ,4023;
+ OB_BUF_NOT_ENOUGH                      ,4024;
+ OB_READ_NOTHING                        ,4026;
+ OB_FILE_NOT_EXIST                      ,4027;
+ OB_DISCONTINUOUS_LOG                   ,4028;
+ OB_SERIALIZE_ERROR                     ,4033;
+ OB_DESERIALIZE_ERROR                   ,4034;
+ OB_AIO_TIMEOUT                         ,4035;
+ OB_NEED_RETRY                          ,4036;
+ OB_NOT_MASTER                          ,4038;
+ OB_DECRYPT_FAILED                      ,4041;
+ OB_NOT_THE_OBJECT                      ,4050;
+ OB_LAST_LOG_RUINNED                    ,4052;
+ OB_INVALID_ERROR                       ,4055;
+ OB_DECIMAL_OVERFLOW_WARN               ,4057;
+ OB_EMPTY_RANGE                         ,4063;
+ OB_INVALID_DATA                        ,4070;
+ OB_CANCELED                            ,4072;
+ OB_LOG_NOT_ALIGN                       ,4074;
+ OB_NOT_IMPLEMENT                       ,4077;
+ OB_DIVISION_BY_ZERO                    ,4078;
+ OB_EXCEED_MEM_LIMIT                    ,4080;
+ OB_QUEUE_OVERFLOW                      ,4085;
+ OB_START_LOG_CURSOR_INVALID            ,4099;
+ OB_LOCK_NOT_MATCH                      ,4100;
+ OB_DEAD_LOCK                           ,4101;
+ OB_CHECKSUM_ERROR                      ,4103;
+ OB_INIT_FAIL                           ,4104;
+ OB_STATE_NOT_MATCH                     ,4109;
+ OB_IN_STOP_STATE                       ,4114;
+ OB_LOG_NOT_CLEAR                       ,4116;
+ OB_FILE_ALREADY_EXIST                  ,4117;
+ OB_UNKNOWN_PACKET                      ,4118;
+ OB_RPC_PACKET_TOO_LONG                 ,4119;
+ OB_LOG_TOO_LARGE                       ,4120;
+ OB_RPC_SEND_ERROR                      ,4121;
+ OB_RPC_POST_ERROR                      ,4122;
+ OB_LIBEASY_ERROR                       ,4123;
+ OB_CONNECT_ERROR                       ,4124;
+ OB_RPC_PACKET_INVALID                  ,4128;
+ OB_BAD_ADDRESS                         ,4144;
+ OB_ERR_MIN_VALUE                       ,4150;
+ OB_ERR_MAX_VALUE                       ,4151;
+ OB_ERR_NULL_VALUE                      ,4152;
+ OB_RESOURCE_OUT                        ,4153;
+ OB_ERR_SQL_CLIENT                      ,4154;
+ OB_OPERATE_OVERFLOW                    ,4157;
+ OB_INVALID_DATE_FORMAT                 ,4158;
+ OB_INVALID_DATE_FORMAT_END             ,4190;
+ OB_INVALID_ARGUMENT_NUM                ,4161;
+ OB_EMPTY_RESULT                        ,4165;
+ OB_LOG_INVALID_MOD_ID                  ,4168;
+ OB_LOG_MODULE_UNKNOWN                  ,4169;
+ OB_LOG_LEVEL_INVALID                   ,4170;
+ OB_LOG_PARSER_SYNTAX_ERR               ,4171;
+ OB_UNKNOWN_CONNECTION                  ,4174;
+ OB_ERROR_OUT_OF_RANGE                  ,4175;
+ OB_OP_NOT_ALLOW                        ,4179;
+ OB_ERR_ALREADY_EXISTS                  ,4181;
+ OB_SEARCH_NOT_FOUND                    ,4182;
+ OB_ITEM_NOT_MATCH                      ,4187;
+ OB_HASH_EXIST                          ,4200;
+ OB_HASH_NOT_EXIST                      ,4201;
+ OB_HASH_GET_TIMEOUT                    ,4204;
+ OB_HASH_PLACEMENT_RETRY                ,4205;
+ OB_HASH_FULL                           ,4206;
+ OB_WAIT_NEXT_TIMEOUT                   ,4208;
+ OB_INVALID_DATE_VALUE                  ,4219;
+ OB_INACTIVE_SQL_CLIENT                 ,4220;
+ OB_INACTIVE_RPC_PROXY                  ,4221;
+ OB_INTERVAL_WITH_MONTH                 ,4222;
+ OB_TOO_MANY_DATETIME_PARTS             ,4223;
+ OB_DATA_OUT_OF_RANGE                   ,4224;
+ OB_ERR_TRUNCATED_WRONG_VALUE_FOR_FIELD ,4226;
+ OB_ERR_OUT_OF_LOWER_BOUND              ,4233;
+ OB_ERR_OUT_OF_UPPER_BOUND              ,4234;
+ OB_BAD_NULL_ERROR                      ,4235;
+ OB_FILE_NOT_OPENED                     ,4243;
+ OB_ERR_DATA_TRUNCATED                  ,4249;
+ OB_NOT_RUNNING                         ,4250;
+ OB_ERR_COMPRESS_DECOMPRESS_DATA        ,4257;
+ OB_ERR_INCORRECT_STRING_VALUE          ,4258;
+ OB_ERR_DISTRIBUTED_NOT_SUPPORTED       ,4259;
+ OB_DATETIME_FUNCTION_OVERFLOW          ,4261;
+ OB_ERR_DOUBLE_TRUNCATED                ,4262;
+ OB_CACHE_FREE_BLOCK_NOT_ENOUGH         ,4273;
+ OB_LAST_LOG_NOT_COMPLETE               ,4278;
+ OB_ERR_PARSER_SYNTAX                   ,5006;
+ OB_ERR_COLUMN_NOT_FOUND                ,5031;
+ OB_ERR_SYS_VARIABLE_UNKNOWN            ,5044;
+ OB_ERR_READ_ONLY                       ,5081;
+ OB_INTEGER_PRECISION_OVERFLOW          ,5088;
+ OB_DECIMAL_PRECISION_OVERFLOW          ,5089;
+ OB_NUMERIC_OVERFLOW                    ,5093;
+ OB_ERR_SYS_CONFIG_UNKNOWN              ,5099;
+ OB_INVALID_ARGUMENT_FOR_EXTRACT        ,5106;
+ OB_INVALID_ARGUMENT_FOR_IS             ,5107;
+ OB_INVALID_ARGUMENT_FOR_LENGTH         ,5108;
+ OB_INVALID_ARGUMENT_FOR_SUBSTR         ,5109;
+ OB_INVALID_ARGUMENT_FOR_TIME_TO_USEC   ,5110;
+ OB_INVALID_ARGUMENT_FOR_USEC_TO_TIME   ,5111;
+ OB_INVALID_NUMERIC                     ,5114;
+ OB_ERR_REGEXP_ERROR                    ,5115;
+ OB_ERR_UNKNOWN_CHARSET                 ,5142;
+ OB_ERR_UNKNOWN_COLLATION               ,5143;
+ OB_ERR_COLLATION_MISMATCH              ,5144;
+ OB_ERR_WRONG_VALUE_FOR_VAR             ,5145;
+ OB_TENANT_NOT_IN_SERVER                ,5150;
+ OB_TENANT_NOT_EXIST                    ,5157;
+ OB_ERR_DATA_TOO_LONG                   ,5167;
+ OB_ERR_WRONG_VALUE_COUNT_ON_ROW        ,5168;
+ OB_CANT_AGGREGATE_2COLLATIONS          ,5177;
+ OB_ERR_UNKNOWN_TIME_ZONE               ,5192;
+ OB_ERR_TOO_BIG_PRECISION               ,5203;
+ OB_ERR_M_BIGGER_THAN_D                 ,5204;
+ OB_ERR_TOO_SMALL_PRECISION             ,5205;
+ OB_ERR_TRUNCATED_WRONG_VALUE           ,5222;
+ OB_ERR_WRONG_VALUE                     ,5241;
+ OB_ERR_UNEXPECTED_TZ_TRANSITION        ,5297;
+ OB_ERR_INVALID_TIMEZONE_REGION_ID      ,5341;
+ OB_ERR_YEAR_CONFLICTS_WITH_JULIAN_DATE                  ,5629;
+ OB_ERR_DAY_OF_YEAR_CONFLICTS_WITH_JULIAN_DATE           ,5630;
+ OB_ERR_MONTH_CONFLICTS_WITH_JULIAN_DATE                 ,5631;
+ OB_ERR_DAY_OF_MONTH_CONFLICTS_WITH_JULIAN_DATE          ,5632;
+ OB_ERR_DAY_OF_WEEK_CONFLICTS_WITH_JULIAN_DATE           ,5633;
+ OB_ERR_HOUR_CONFLICTS_WITH_SECONDS_IN_DAY               ,5634;
+ OB_ERR_MINUTES_OF_HOUR_CONFLICTS_WITH_SECONDS_IN_DAY    ,5635;
+ OB_ERR_SECONDS_OF_MINUTE_CONFLICTS_WITH_SECONDS_IN_DAY  ,5636;
+ OB_ERR_DATE_NOT_VALID_FOR_MONTH_SPECIFIED               ,5637;
+ OB_ERR_INPUT_VALUE_NOT_LONG_ENOUGH                      ,5638;
+ OB_ERR_INVALID_YEAR_VALUE                               ,5639;
+ OB_ERR_INVALID_QUARTER_VALUE                            ,5640;
+ OB_ERR_INVALID_MONTH                                    ,5641;
+ OB_ERR_INVALID_DAY_OF_THE_WEEK                          ,5642;
+ OB_ERR_INVALID_DAY_OF_YEAR_VALUE                        ,5643;
+ OB_ERR_INVALID_HOUR12_VALUE                             ,5644;
+ OB_ERR_INVALID_HOUR24_VALUE                             ,5645;
+ OB_ERR_INVALID_MINUTES_VALUE                            ,5646;
+ OB_ERR_INVALID_SECONDS_VALUE                            ,5647;
+ OB_ERR_INVALID_SECONDS_IN_DAY_VALUE                     ,5648;
+ OB_ERR_INVALID_JULIAN_DATE_VALUE                        ,5649;
+ OB_ERR_AM_OR_PM_REQUIRED                                ,5650;
+ OB_ERR_BC_OR_AD_REQUIRED                                ,5651;
+ OB_ERR_FORMAT_CODE_APPEARS_TWICE                        ,5652;
+ OB_ERR_DAY_OF_WEEK_SPECIFIED_MORE_THAN_ONCE             ,5653;
+ OB_ERR_SIGNED_YEAR_PRECLUDES_USE_OF_BC_AD               ,5654;
+ OB_ERR_JULIAN_DATE_PRECLUDES_USE_OF_DAY_OF_YEAR         ,5655;
+ OB_ERR_YEAR_MAY_ONLY_BE_SPECIFIED_ONCE                  ,5656;
+ OB_ERR_HOUR_MAY_ONLY_BE_SPECIFIED_ONCE                  ,5657;
+ OB_ERR_AM_PM_CONFLICTS_WITH_USE_OF_AM_DOT_PM_DOT        ,5658;
+ OB_ERR_BC_AD_CONFLICT_WITH_USE_OF_BC_DOT_AD_DOT         ,5659;
+ OB_ERR_MONTH_MAY_ONLY_BE_SPECIFIED_ONCE                 ,5660;
+ OB_ERR_DAY_OF_WEEK_MAY_ONLY_BE_SPECIFIED_ONCE           ,5661;
+ OB_ERR_FORMAT_CODE_CANNOT_APPEAR                        ,5662;
+ OB_ERR_NON_NUMERIC_CHARACTER_VALUE                      ,5663;
+ OB_INVALID_MERIDIAN_INDICATOR_USE                       ,5664;
+ OB_ERR_DAY_OF_MONTH_RANGE                               ,5667;
+ OB_MASK_SET_NO_NODE                    ,6203;
+ OB_TRANS_TIMEOUT                       ,6210;
+ OB_TRANS_KILLED                        ,6211;
+ OB_TRANS_STMT_TIMEOUT                  ,6212;
+ OB_TRANS_CTX_NOT_EXIST                 ,6213;
+ OB_TRANS_UNKNOWN                       ,6225;
+ OB_ERR_READ_ONLY_TRANSACTION           ,6226;
+ OB_PACKET_CLUSTER_ID_NOT_MATCH         ,8004;
+ OB_URI_ERROR                           ,9001;
+ OB_FINAL_MD5_ERROR                     ,9002;
+ OB_OSS_ERROR                           ,9003;
+ OB_INIT_MD5_ERROR                      ,9004;
+ OB_OUT_OF_ELEMENT                      ,9005;
+ OB_UPDATE_MD5_ERROR                    ,9006;
+ OB_FILE_LENGTH_INVALID                 ,9007;
+ OB_AGENT_FILE_NOT_EXIST                ,9011;
