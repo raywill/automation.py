@@ -27,7 +27,8 @@ if ("--upgrade" == arg):
     sys.exit(0)
 
 
-if (arg[0:30].find('{') >= 0 or len(arg) > 300):
+#if (arg[0:30].find('{') >= 0 or len(arg) > 300):
+if (len(arg) > 50):
     f = open("input.txt", "w")
     f.write(arg)
     f.close()
