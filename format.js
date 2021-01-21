@@ -160,6 +160,8 @@ readerStream.on('end',function(){
 
 writerStream.on('finish', function() {
     console.log("写入完成。");
+    var spawn = require('child_process').spawn;
+    spawn('open', ['output.txt']);
 });
 
 writerStream.on('error', function(err){

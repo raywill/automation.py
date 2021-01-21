@@ -33,8 +33,9 @@ if (len(arg) > 50):
     f.write(arg)
     f.close()
     # https://github.com/zaach/jsonlint
+    subprocess.call(["rm", "-f", "output.txt"])
     subprocess.call(["/usr/local/bin/node", "format.js"])
-    subprocess.call(["open", "output.txt"])
+    #subprocess.call(["open", "output.txt"])
     print "open file ok"
     sys.exit(0)
 
