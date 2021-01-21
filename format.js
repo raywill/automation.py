@@ -5,6 +5,7 @@ var ident = 0;
 var tab = 4;
 var cur_line = "";
 var begin = false; // 标记开始记录值
+var outFile = "output.json"
 
 var isIntNum = function (val) {
     var regPos = /^\d+$/; // 非负整数
@@ -60,8 +61,8 @@ var dateFormat = function (timestamp, formats) {
 
 // 创建可读流
 var readerStream = fs.createReadStream('input.txt');
-// 创建一个可以写入的流，写入到文件 output.txt 中
-var writerStream = fs.createWriteStream('output.txt');
+// 创建一个可以写入的流，写入到文件 outFile 中
+var writerStream = fs.createWriteStream(outFile);
 
 // 使用 utf8 编码写入数据
 writerStream.write(data,'UTF8');
@@ -161,7 +162,7 @@ readerStream.on('end',function(){
 writerStream.on('finish', function() {
     console.log("写入完成。");
     var spawn = require('child_process').spawn;
-    spawn('open', ['output.txt']);
+    spawn('open', [outFile]);
 });
 
 writerStream.on('error', function(err){
