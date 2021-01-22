@@ -4,8 +4,9 @@ var data = '';
 var ident = 0;
 var tab = 4;
 var cur_line = "";
-var begin = false; // 标记开始记录值
+var beginItem = false; // 标记开始记录值
 var outFile = "output.json"
+var beginNewLine = false; // 用于过滤,号之后的空格，避免换行后立即输出空格影响格式美观
 
 var isIntNum = function (val) {
     var regPos = /^\d+$/; // 非负整数
@@ -73,6 +74,7 @@ readerStream.on('data', function(chunk) {
 
 function nextline()
 {
+  beginNewLine = true;
   writerStream.write("\n");
   for (var i = 0; i < ident * tab; ++i) {
     writerStream.write(" ");
@@ -91,7 +93,7 @@ function on_finish_line()
 
 function begin_emit(c)
 {
-  begin = true;
+  beginItem = true;
   cur_line = "";
   writerStream.write(c);
 }
@@ -100,13 +102,17 @@ function finish_emit(c)
 {
   on_finish_line();
   cur_line = "";
-  begin = false;
+  beginItem = false;
   writerStream.write(c);
 }
 
 function emit(c)
 {
-  if (begin)
+  if (beginNewLine && c == ' ')
+    return
+
+  beginNewLine = false;
+  if (beginItem)
     cur_line += c;
   writerStream.write(c);
 }
@@ -126,6 +132,7 @@ readerStream.on('end',function(){
      var c = data[i];
      switch (c) {
        case ' ':
+         emit(c);
          break;
        case '{':
        case '[':
